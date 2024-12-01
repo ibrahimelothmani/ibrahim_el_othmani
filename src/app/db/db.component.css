@@ -1,0 +1,45 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: #333;
+  padding: 20px;
+}
+.table-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.logout-btn:hover {
+  background-color: #c82333;
+}
+.no-contacts {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
