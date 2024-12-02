@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "set-env": "node set-env.ts",
+    "start": "npm run set-env && ng serve",
+    "build": "npm run set-env && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -22,6 +23,7 @@
     "@fortawesome/fontawesome-free": "^6.7.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "firebase": "^10.14.1",
     "glob": "^11.0.0",
     "lightbox2": "^2.11.5",
