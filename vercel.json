@@ -3,9 +3,10 @@
     "outputDirectory": "dist/portfolio",
     "framework": "angular",
     "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
     ]
-}
+  }
+  
