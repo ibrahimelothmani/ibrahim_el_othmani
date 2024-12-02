@@ -30,7 +30,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     AppRoutingModule,
     LightboxModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     

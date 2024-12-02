@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "set-env": "node set-env.ts",
-    "start": "npm run set-env && ng serve",
-    "build": "npm run set-env && ng build",
+    "start": "ng serve",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -23,10 +22,10 @@
     "@fortawesome/fontawesome-free": "^6.7.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
-    "dotenv": "^16.4.5",
     "firebase": "^10.14.1",
     "glob": "^11.0.0",
     "lightbox2": "^2.11.5",
+    "ngx-env": "^0.1.0",
     "ngx-lightbox": "^3.0.0",
     "rimraf": "^6.0.1",
     "rxjs": "~7.8.0",
@@ -34,16 +33,20 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^18.0.0",
     "@angular-devkit/build-angular": "^18.2.12",
     "@angular/cli": "^18.2.12",
     "@angular/compiler-cli": "^18.2.0",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^22.10.1",
+    "dotenv": "^16.4.5",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ngx-build-plus": "^18.0.0",
     "typescript": "~5.5.2"
   }
 }
