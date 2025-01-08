@@ -31,6 +31,18 @@ export class DBComponent implements OnInit {
     });
   }
 
+  async delete(contactKey: string) {
+    const user = await this.auth.currentUser;
+    if(user){
+      console.log('User is authenticated');
+      this.db.list(`/contact/${contactKey}`).remove();
+    }
+    else{
+      console.log('User is not authenticated');
+      this.router.navigate(['/login']); // Redirect to login after logout
+    }
+  }
+  
   logout() {
     this.auth.signOut().then(() => {
       this.router.navigate(['/login']); // Redirect to login after logout
