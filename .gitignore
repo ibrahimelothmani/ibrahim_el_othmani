@@ -48,3 +48,5 @@ src/environments/environment.prod.ts
 
 
 .codegpt
+
+index.html
