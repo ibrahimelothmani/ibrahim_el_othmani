@@ -1,187 +1,93 @@
 <app-header></app-header>
 <!-- About -->
-<section id="about" class="about bg-light py-5">
-  <div class="container">
-    <div class="text-center">
-      <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
-      <hr class="w-25 mx-auto" />
-      <h2 class="mb-4">Let me introduce myself.</h2>
-    </div>
-    <div class="about-content d-flex gap-5 align-items-center h-100">
-      <img
-        src="../../assets/images/ibrahim.png"
-        alt=""
-        class="about-img img-fluid rounded-circle"
-      />
-      <p class="lead">
-        I'm a web developer with extensive experience and a passion for
-        computers. I learned to code from a very young age in various computer
-        languages and technologies (JavaScript, PHP, Java, Symfony, Angular,
-        Spring Boot, etc.) and created personal projects. I master the technical
-        steps of creating a website or web application, from understanding user
-        needs to frontend and backend development, and maintenance. I am
-        currently expanding my expertise to include DevOps practices, focusing
-        on CI/CD pipelines, containerization (Docker), infrastructure as code
-        (Terraform/Ansible), and cloud platforms (AWS/Azure/GCP). My goal is to
-        bridge the gap between development and operations, ensuring seamless
-        deployment and scalable architectures.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- Profile & Skills -->
-<section class="profile my-6">
+<section id="about" class="about py-6">
   <div class="container">
     <div class="row">
-      <!-- Profile Column -->
-      <div class="col-md-6">
-        <h3 class="text-uppercase fw-bold text-primary">Profile</h3>
-        <p>
-          Here is some more info about myself to help you get to know me better.
-        </p>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item mb-3">
-            <h5 class="text-transform">
-              <i class="fas fa-user text-primary"></i> Full Name:
-            </h5>
-            <p>Ibrahim El Othmani</p>
-          </li>
-          <li class="list-group-item mb-3">
-            <h5 class="text-transform">
-              <i class="fas fa-building text-primary"></i> Current Position:
-            </h5>
-            <p>Nabeul, Tunisia</p>
-          </li>
-          <li class="list-group-item mb-3">
-            <h5 class="text-transform">
-              <i class="fas fa-envelope text-primary"></i> Email:
-            </h5>
-            <p>
-              <a href="mailto:ibrahimelothmanii&#64;gmail.com"
-                >ibrahimelothmanii&#64;gmail.com</a
-              >
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Skills Section -->
-      <div class="col-md-6">
-        <h3 class="text-uppercase fw-bold text-primary">Skills</h3>
-        <div class="row text-center">
-          <!-- Software Skills -->
-          <div
-            class="software-skills-main-div d-flex flex-wrap justify-content-center"
-          >
-            <div class="software-skill-inline text-center m-3" name="java">
-              <i class="fab fa-java" style="font-size: 3rem"></i>
-              <p>Java</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="java">
-              <i class="fab fa-python" style="font-size: 3rem"></i>
-              <p>Python</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="php">
-              <i class="fab fa-php" style="font-size: 3rem"></i>
-              <p>Php</p>
-            </div>
-            <div
-              class="software-skill-inline text-center m-3"
-              name="javascript"
-            >
-              <i class="fab fa-js" style="font-size: 3rem"></i>
-              <p>JavaScript</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="angular">
-              <i class="fab fa-angular" style="font-size: 3rem"></i>
-              <p>Angular</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="angular">
-              <i class="fab fa-react" style="font-size: 3rem"></i>
-              <p>React</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="symfony">
-              <i class="fab fa-symfony" style="font-size: 3rem"></i>
-              <p>Symfony</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="spring">
-              <i class="fas fa-code" style="font-size: 3rem"></i>
-              <p>Spring</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="mysql">
-              <i class="fas fa-database" style="font-size: 3rem"></i>
-              <p>MySQL</p>
-            </div>
-            <div
-              class="software-skill-inline text-center m-3"
-              name="postgresql"
-            >
-              <i class="fas fa-database" style="font-size: 3rem"></i>
-              <p>PostgreSQL</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="mongodb">
-              <i class="fas fa-database" style="font-size: 3rem"></i>
-              <p>MongoDB</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="html5">
-              <i class="fab fa-html5" style="font-size: 3rem"></i>
-              <p>HTML5</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="css3">
-              <i class="fab fa-css3-alt" style="font-size: 3rem"></i>
-              <p>CSS3</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="wordpress">
-              <i class="fab fa-wordpress" style="font-size: 3rem"></i>
-              <p>WordPress</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="docker">
-              <i class="fab fa-docker" style="font-size: 3rem"></i>
-              <p>Docker</p>
-            </div>
-            <div class="software-skill-inline text-center m-3" name="jenkins">
-              <i class="fab fa-jenkins" style="font-size: 3rem"></i>
-              <p>Jenkins</p>
-            </div>
+      <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="about-img-container position-relative">
+          <img
+            src="/assets/images/ibrahim.png"
+            alt="Ibrahim El Othmani"
+            class="about-img img-fluid rounded-3 shadow-lg"
+          />
+          <div class="experience-badge">
+            <span class="exp-years">3+</span>
+            <span class="exp-text">Years of Experience</span>
           </div>
         </div>
       </div>
-      <!-- Buttons Section -->
-      <div class="row mt-5 text-center">
-        <div class="col-12">
-          <a
-            href="#"
-            class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
-            >Hire Me Now</a
-          >
-
-          <!-- Updated Download CV Button with Dropdown -->
-          <div class="dropdown d-inline-block">
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="section-title mb-4">
+          <h4 class="text-uppercase fw-bold text-primary mb-2">About Me</h4>
+          <h2 class="display-5 fw-bold mb-4">Full Stack Developer & DevOps Enthusiast</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <p class="lead mb-4">
+          I'm a web developer with extensive experience and a passion for
+          computers. I learned to code from a very young age in various computer
+          languages and technologies (JavaScript, PHP, Java, Symfony, Angular,
+          Spring Boot, etc.) and created personal projects.
+        </p>
+        
+        <p class="mb-4">
+          I master the technical steps of creating a website or web application, from understanding user
+          needs to frontend and backend development, and maintenance. I am
+          currently expanding my expertise to include DevOps practices, focusing
+          on CI/CD pipelines, containerization (Docker), infrastructure as code
+          (Terraform/Ansible), and cloud platforms (AWS/Azure/GCP). My goal is to
+          bridge the gap between development and operations, ensuring seamless
+          deployment and scalable architectures.
+        </p>
+        
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <ul class="about-list">
+              <li><i class="fas fa-check-circle text-primary"></i> Frontend & Backend Development</li>
+              <li><i class="fas fa-check-circle text-primary"></i> Cloud Architecture & DevOps</li>
+              <li><i class="fas fa-check-circle text-primary"></i> Database Design & Optimization</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="about-list">
+              <li><i class="fas fa-check-circle text-primary"></i> Responsive Web Design</li>
+              <li><i class="fas fa-check-circle text-primary"></i> CI/CD Implementation</li>
+              <li><i class="fas fa-check-circle text-primary"></i> API Development & Integration</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane me-2"></i> Hire Me
+          </a>
+          <div class="dropdown">
             <button
-              class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2 dropdown-toggle"
+              class="btn btn-outline-primary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Download CV
+              <i class="fas fa-download me-2"></i> Download CV
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a
                   class="dropdown-item"
-                  href="../../assets/pdf/ibrahim.pdf"
-                  target="_blank"
-                  >English CV</a
+                  href="./assets/pdf/ibrahim.pdf"
+                  download
                 >
+                  <i class="fas fa-file-pdf me-2"></i> English CV
+                </a>
               </li>
               <li>
                 <a
                   class="dropdown-item"
-                  href="../../assets/pdf/ibrahim-fr.pdf"
-                  target="_blank"
-                  >French CV</a
+                  href="./assets/pdf/ibrahim-fr.pdf"
+                  download
                 >
+                  <i class="fas fa-file-pdf me-2"></i> French CV
+                </a>
               </li>
             </ul>
           </div>
@@ -191,49 +97,228 @@
   </div>
 </section>
 
-<!-- Education Section -->
-<section class="portfolio py-5 bg-light">
+<!-- Profile & Skills -->
+<section class="profile-skills py-6 bg-light">
   <div class="container">
-    <div class="text-center mb-5">
-      <h4 class="text-uppercase fw-bold text-primary">Education</h4>
-      <hr class="w-25 mx-auto" />
-    </div>
     <div class="row">
-      <!-- Education Item 1 -->
-      <div class="col-12 col-md-6 mb-4">
-        <div
-          class="d-flex align-items-center gap-5 gap-md-4 align-items-center h-100"
-        >
-          <div data-lightbox="images" data-title="Web Development Certificate">
-            <img
-              src="../../assets/img/2i Formation.jpg"
-              alt="2i Formation Logo"
-              class="education-logo"
-            />
-          </div>
-          <div>
-            <h5 class="fw-bold mb-1">2i Formation</h5>
-            <p class="mb-0 text-muted">Web Application Development</p>
+      <!-- Profile Column -->
+      <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body p-4">
+            <h3 class="text-uppercase fw-bold text-primary mb-4">Profile</h3>
+            <p class="mb-4">
+              Here is some more info about myself to help you get to know me better.
+            </p>
+            <ul class="profile-list">
+              <li class="mb-3 d-flex align-items-center">
+                <div class="profile-icon">
+                  <i class="fas fa-user text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Full Name:</h6>
+                  <p class="mb-0">Ibrahim El Othmani</p>
+                </div>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <div class="profile-icon">
+                  <i class="fas fa-map-marker-alt text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Location:</h6>
+                  <p class="mb-0">Nabeul, Tunisia</p>
+                </div>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <div class="profile-icon">
+                  <i class="fas fa-envelope text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Email:</h6>
+                  <p class="mb-0">
+                    <a href="mailto:ibrahimelothmanii&#64;gmail.com" class="text-decoration-none">
+                      ibrahimelothmanii&#64;gmail.com
+                    </a>
+                  </p>
+                </div>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <div class="profile-icon">
+                  <i class="fas fa-globe text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Languages:</h6>
+                  <p class="mb-0">
+                    English (Fluent), French (Fluent), Arabic (Native)
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- Education Item 2 -->
-      <div class="col-12 col-md-6 mb-4">
-        <div
-          class="d-flex align-items-center gap-5 gap-md-4 align-items-center h-100"
-        >
-          <div data-lightbox="images" data-title="Engineering Fundamentals">
-            <img
-              src="../../assets/img/isetN.jpg"
-              alt="ISET Nabeul Logo"
-              class="education-logo"
-            />
+
+      <!-- Skills Section -->
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body p-4">
+            <h3 class="text-uppercase fw-bold text-primary mb-4">Skills</h3>
+            
+            <!-- Skill Bars -->
+            <div class="skill-bars mb-4">
+              <div class="skill-item mb-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-bold">Frontend (HTML, CSS, JavaScript)</span>
+                  <span class="fw-bold">95%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="95"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-bold">Backend (Java, PHP, Python)</span>
+                  <span class="fw-bold">90%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="90"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-bold">Frameworks (Angular, React, Spring)</span>
+                  <span class="fw-bold">85%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="85"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-bold">Databases (SQL, NoSQL)</span>
+                  <span class="fw-bold">80%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="80"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-bold">DevOps (Docker, CI/CD)</span>
+                  <span class="fw-bold">75%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="75"></div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Tech Icons -->
+            <h5 class="text-uppercase fw-bold mb-3">Technologies</h5>
+            <div class="row text-center">
+              <div class="software-skills-main-div d-flex flex-wrap justify-content-center">
+                <div class="software-skill-inline text-center m-2" name="java">
+                  <i class="fab fa-java" style="font-size: 2.5rem"></i>
+                  <p class="small">Java</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="python">
+                  <i class="fab fa-python" style="font-size: 2.5rem"></i>
+                  <p class="small">Python</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="php">
+                  <i class="fab fa-php" style="font-size: 2.5rem"></i>
+                  <p class="small">PHP</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="javascript">
+                  <i class="fab fa-js" style="font-size: 2.5rem"></i>
+                  <p class="small">JavaScript</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="angular">
+                  <i class="fab fa-angular" style="font-size: 2.5rem"></i>
+                  <p class="small">Angular</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="react">
+                  <i class="fab fa-react" style="font-size: 2.5rem"></i>
+                  <p class="small">React</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="symfony">
+                  <i class="fab fa-symfony" style="font-size: 2.5rem"></i>
+                  <p class="small">Symfony</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="spring">
+                  <i class="fas fa-leaf" style="font-size: 2.5rem"></i>
+                  <p class="small">Spring</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="html5">
+                  <i class="fab fa-html5" style="font-size: 2.5rem"></i>
+                  <p class="small">HTML5</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="css3">
+                  <i class="fab fa-css3-alt" style="font-size: 2.5rem"></i>
+                  <p class="small">CSS3</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="docker">
+                  <i class="fab fa-docker" style="font-size: 2.5rem"></i>
+                  <p class="small">Docker</p>
+                </div>
+                <div class="software-skill-inline text-center m-2" name="jenkins">
+                  <i class="fab fa-jenkins" style="font-size: 2.5rem"></i>
+                  <p class="small">Jenkins</p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education py-6">
+  <div class="container">
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <h4 class="text-uppercase fw-bold text-primary mb-2">Education</h4>
+      <h2 class="display-5 fw-bold mb-4">My Academic Background</h2>
+      <div class="title-underline mx-auto"></div>
+    </div>
+    
+    <div class="row">
+      <!-- Education Item 1 -->
+      <div class="col-lg-6 mb-4" data-aos="fade-up">
+        <div class="education-card">
+          <img
+            src="/assets/img/2i Formation.jpg"
+            alt="2i Formation Logo"
+            class="education-logo"
+          />
           <div>
-            <h5 class="fw-bold mb-1">
-              Higher Institute of Technological Studies of Nabeul
-            </h5>
-            <p class="mb-0 text-muted">National Diploma in Civil Engineering</p>
+            <h4 class="fw-bold mb-2">Web Application Development</h4>
+            <h6 class="text-primary mb-3">2i Formation - 2023</h6>
+            <p class="mb-0">
+              Specialized training in modern web application development, focusing on frontend and backend technologies, responsive design, and database management.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Education Item 2 -->
+      <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="education-card">
+          <img
+            src="/assets/img/isetN.jpg"
+            alt="ISET Nabeul Logo"
+            class="education-logo"
+          />
+          <div>
+            <h4 class="fw-bold mb-2">National Diploma in Civil Engineering</h4>
+            <h6 class="text-primary mb-3">Higher Institute of Technological Studies of Nabeul - 2020</h6>
+            <p class="mb-0">
+              Comprehensive education in civil engineering principles, project management, and technical design that provided a strong foundation for logical thinking and problem-solving.
+            </p>
           </div>
         </div>
       </div>
@@ -242,501 +327,196 @@
 </section>
 
 <!-- Certificates Section -->
-<section class="portfolio py-5 bg-light">
+<section id="certificates" class="certificates py-6 bg-light">
   <div class="container">
-    <div class="text-center mb-5">
-      <h4 class="text-uppercase fw-bold text-primary">Certificates</h4>
-      <hr class="w-25 mx-auto" />
-      <h2 class="mb-4">Check Out Some Of My Certificates</h2>
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <h4 class="text-uppercase fw-bold text-primary mb-2">Certificates</h4>
+      <h2 class="display-5 fw-bold mb-4">Professional Certifications</h2>
+      <div class="title-underline mx-auto"></div>
     </div>
-
-    <!-- Carousel for certificates -->
-    <div
-      id="certificatesCarousel"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-
-        <!-- First Slide -->
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="project shadow-lg rounded-5 text-center">
-                <a
-                  href="../../assets/images/javascript.png"
-                  data-lightbox="images"
-                  data-title="JavaScript Certificate"
-                >
-                  <img
-                    src="../../assets/images/javascript.png"
-                    alt="JavaScript Certificate"
-                    class="img-fluid rounded-3"
-                    style="height: 500px; object-fit: contain;"
-                  />
-                </a>
-                <!-- Certificate Link -->
-                <a
-                  href="https://www.freecodecamp.org/certification/Ibrahim_El_Othmani/javascript-algorithms-and-data-structures-v8"
-                  target="_blank"
-                  class="btn btn-primary mt-3"
-                  >View Certificate</a
-                >
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="project shadow-lg rounded-5 text-center">
-                <a
-                  href="../../assets/images/oracle.png"
-                  data-lightbox="images"
-                  data-title="Oracle"
-                >
-                  <img
-                    src="../../assets/images/oracle.png"
-                    alt="Oracle"
-                    class="img-fluid rounded-3"
-                    style="height: 500px; object-fit: contain;"
-                  />
-                </a>
-                <!-- Certificate Link -->
-                <a
-                  href="https://brm-certview.oracle.com/ords/certview/ScoreReport?ssn=OC5615857&registrationID=asx-cd63a1c8-85ea-46ce-ad48-8e19466817f1"
-                  target="_blank"
-                  class="btn btn-primary mt-3"
-                  >View Certificate</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Second Slide -->
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="project shadow-lg rounded-5 text-center">
-                <a
-                  href="../../assets/images/Full Certificate of Web Development.png"
-                  data-lightbox="images"
-                  data-title="Web Development Certificate"
-                >
-                  <img
-                    src="../../assets/images/Full Certificate of Web Development.png"
-                    alt="Web Development Certificate"
-                    class="img-fluid rounded-3"
-                    style="height: 400px; object-fit: contain;"
-                  />
-                </a>
-                <!-- Certificate Link -->
-                <a
-                  href="https://coursera.org/share/84ec367376b06e9ed6f545fa604e706a"
-                  target="_blank"
-                  class="btn btn-primary mt-3"
-                  >View Certificate</a
-                >
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="project shadow-lg rounded-5 text-center">
-                <a
-                  href="../../assets/images/Fundamental for engineering.png"
-                  data-lightbox="images"
-                  data-title="Engineering Fundamentals"
-                >
-                  <img
-                    src="../../assets/images/Fundamental for engineering.png"
-                    alt="Engineering Fundamentals"
-                    class="img-fluid rounded-3"
-                    style="height: 400px; object-fit: contain;"
-                  />
-                </a>
-                <!-- Certificate Link -->
-                <a
-                  href="https://coursera.org/share/6dddbfb63e244fc239bc194d51048e65"
-                  target="_blank"
-                  class="btn btn-primary mt-3"
-                  >View Certificate</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Third Slide -->
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="project shadow-lg rounded-5 text-center">
-                <a
-                  href="../../assets/images/HTML, CSS and JavaScript.png"
-                  data-lightbox="images"
-                  data-title="HTML, CSS and JavaScript"
-                >
-                  <img
-                    src="../../assets/images/HTML, CSS and JavaScript.png"
-                    alt="HTML, CSS and JavaScript"
-                    class="img-fluid rounded-3"
-                    style="height: 400px; object-fit: contain;"
-                  />
-                </a>
-                <!-- Certificate Link -->
-                <a
-                  href="https://coursera.org/share/af54b65a48474b988a206fe71c2db67c"
-                  target="_blank"
-                  class="btn btn-primary mt-3"
-                  >View Certificate</a
-                >
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="project shadow-lg rounded-5 text-center">
-                <a
-                  href="../../assets/images/JavaScript.png"
-                  data-lightbox="images"
-                  data-title="JavaScript Certificate"
-                >
-                  <img
-                    src="../../assets/images/JavaScript.png"
-                    alt="JavaScript Certificate"
-                    class="img-fluid rounded-3"
-                    style="height: 400px; object-fit: contain;"
-                  />
-                </a>
-                <!-- Certificate Link -->
-                <a
-                  href="https://coursera.org/share/f086abdd293d558cb1e06331abcfdcc8"
-                  target="_blank"
-                  class="btn btn-primary mt-3"
-                  >View Certificate</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel controls -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#certificatesCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#certificatesCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Experiences Section -->
-<section class="portfolio py-5 bg-light">
-  <div id="experience">
-    <div class="container">
-      <div class="experience-container">
-        <div class="text-center mb-5">
-          <h3 class="text-uppercase fw-bold text-primary">Experiences</h3>
-          <hr class="w-25 mx-auto" />
-        </div>
-        <div class="experience-cards-div">
-          <!-- Experience Card 1 -->
-          <div class="experience-card">
-            <div
-              class="experience-banner"
-              style="background: rgb(249, 249, 249)"
-            >
-              <div class="experience-blurred_div"></div>
-              <div class="experience-div-company">
-                <h5 class="experience-text-company">Easy Build</h5>
-              </div>
-              <img
-                class="experience-roundedimg"
-                src="../../assets/exp/EasyBuild.jpg"
-                alt="EasyBuild"
-              />
-            </div>
-            <div class="experience-text-details">
-              <hr />
-              <h5 class="experience-text-date">January 2025 – Today</h5>
-              <h5>Co, Founder</h5>
-              <hr />
-              <div class="content">
-                <p>
-                  Articulate EasyBuild's mission to revolutionize architectural
-                  design for architects, builders, and planners.
-                </p>
-                <p>
-                  Iterate on features based on user input, such as enhancing 3D
-                  visualization or adding collaboration tools.
-                </p>
-                <p>
-                  Research competitors (e.g., AutoCAD, SketchUp) to position
-                  EasyBuild as a faster, AI-driven alternative.
-                </p>
-                <p>
-                  Pitch to investors or secure funding to support AI model
-                  integration, marketing, and team expansion.
-                </p>
-                <p>
-                  Build partnerships with architectural firms, real estate
-                  developers, or AI providers to enhance credibility and reach.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Card 2 -->
-          <div class="experience-card">
-            <div
-              class="experience-banner"
-              style="background: rgb(249, 249, 249)"
-            >
-              <div class="experience-blurred_div"></div>
-              <div class="experience-div-company">
-                <h5 class="experience-text-company">IBH Ibn alhaythem</h5>
-              </div>
-              <img
-                class="experience-roundedimg"
-                src="../../assets/exp/ibh.png"
-                alt="IBH"
-              />
-            </div>
-            <div class="experience-text-details">
-              <hr />
-              <h5 class="experience-text-date">August 2024 – October 2024</h5>
-              <h5>Freelance Full Stack Developer Angular/Spring Boot</h5>
-              <hr />
-              <div class="content">
-                <p>
-                  Developed a platform using Spring Boot for the backend and
-                  Angular for the frontend.
-                </p>
-                <p>
-                  Designed and implemented RESTful APIs to facilitate
-                  communication between the client and server.
-                </p>
-                <p>
-                  Created a responsive user interface that improved user
-                  experience and engagement.
-                </p>
-                <p>
-                  Collaborated with team members to gather requirements and
-                  iterated on features based on feedback.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Card 3 -->
-          <div class="experience-card">
-            <div
-              class="experience-banner"
-              style="background: rgb(249, 249, 249)"
-            >
-              <div class="experience-blurred_div"></div>
-              <div class="experience-div-company">
-                <h5 class="experience-text-company">Upwork</h5>
-              </div>
-              <img
-                class="experience-roundedimg"
-                src="../../assets/exp/upwork.jpg"
-                alt="Upwork"
-              />
-            </div>
-            <div class="experience-text-details">
-              <hr />
-              <h5 class="experience-text-date">April 2024 – July 2024</h5>
-              <h5>Freelance Back-End Developer</h5>
-              <hr />
-              <div class="content">
-                <p>
-                  Designed and implemented REST APIs for enterprise solutions.
-                </p>
-                <p>Optimized database queries to improve performance.</p>
-                <p>
-                  Collaborated with cross-functional teams for Agile
-                  development.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio -->
-<section class="portfolio py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h4 class="text-uppercase fw-bold text-primary">Portfolio</h4>
-      <hr class="w-25 mx-auto" />
-      <h2 class="mb-4">Check Out My Work</h2>
-      <p class="lead">Here is a small sample of my projects.</p>
-    </div>
+    
     <div class="row">
-      <!-- Project 1 -->
-      <div class="col-md-6 mb-4">
-        <div class="project shadow-lg rounded-5 position-relative">
-          <a
-            href="../../assets/img/drugstore.png"
-            data-lightbox="images"
-            data-title="Drugstore App"
-          >
-            <img
-              src="../../assets/images/drugstore.png"
-              alt="Drugstore Project"
-              class="img-fluid rounded-3 project-img"
-            />
-          </a>
-          <div class="position-absolute bottom-0 start-0 p-3">
-            <a
-              href="https://github.com/ibrahimelothmani/SportsStore"
-              target="_blank"
-              class="btn btn-primary btn-sm"
+      <div class="col-12 mb-5" data-aos="fade-up">
+        <div class="certificates-filter text-center">
+          <div id="certificatesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                <div class="row g-4">
+                  <div class="col-md-6 mb-4">
+                    <div class="certificate-card h-100">
+                      <div class="certificate-image">
+                        <img
+                          src="/assets/images/javascript.png"
+                          alt="JavaScript Certificate"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="certificate-content text-center">
+                        <h5 class="fw-bold mb-3">JavaScript Algorithms and Data Structures</h5>
+                        <p class="text-muted mb-3">freeCodeCamp</p>
+                        <a
+                          href="https://www.freecodecamp.org/certification/Ibrahim_El_Othmani/javascript-algorithms-and-data-structures-v8"
+                          target="_blank"
+                          class="btn btn-primary"
+                        >
+                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="certificate-card h-100">
+                      <div class="certificate-image">
+                        <img
+                          src="/assets/images/oracle.png"
+                          alt="Oracle Certification"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="certificate-content text-center">
+                        <h5 class="fw-bold mb-3">Oracle Certified Associate</h5>
+                        <p class="text-muted mb-3">Oracle</p>
+                        <a
+                          href="https://brm-certview.oracle.com/ords/certview/ScoreReport?ssn=OC5615857&registrationID=asx-cd63a1c8-85ea-46ce-ad48-8e19466817f1"
+                          target="_blank"
+                          class="btn btn-primary"
+                        >
+                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <div class="col-md-6 mb-4">
+                    <div class="certificate-card h-100">
+                      <div class="certificate-image">
+                        <img
+                          src="/assets/images/Full Certificate of Web Development.png"
+                          alt="Web Development Certificate"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="certificate-content text-center">
+                        <h5 class="fw-bold mb-3">Full Certificate of Web Development</h5>
+                        <p class="text-muted mb-3">Coursera</p>
+                        <a
+                          href="https://coursera.org/share/84ec367376b06e9ed6f545fa604e706a"
+                          target="_blank"
+                          class="btn btn-primary"
+                        >
+                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="certificate-card h-100">
+                      <div class="certificate-image">
+                        <img
+                          src="/assets/images/Fundamental for engineering.png"
+                          alt="Engineering Fundamentals"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="certificate-content text-center">
+                        <h5 class="fw-bold mb-3">Engineering Fundamentals</h5>
+                        <p class="text-muted mb-3">Coursera</p>
+                        <a
+                          href="https://coursera.org/share/6dddbfb63e244fc239bc194d51048e65"
+                          target="_blank"
+                          class="btn btn-primary"
+                        >
+                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Third Slide -->
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <div class="col-md-6 mb-4">
+                    <div class="certificate-card h-100">
+                      <div class="certificate-image">
+                        <img
+                          src="/assets/images/HTML, CSS and JavaScript.png"
+                          alt="HTML, CSS and JavaScript"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="certificate-content text-center">
+                        <h5 class="fw-bold mb-3">HTML, CSS and JavaScript</h5>
+                        <p class="text-muted mb-3">Coursera</p>
+                        <a
+                          href="https://coursera.org/share/af54b65a48474b988a206fe71c2db67c"
+                          target="_blank"
+                          class="btn btn-primary"
+                        >
+                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="certificate-card h-100">
+                      <div class="certificate-image">
+                        <img
+                          src="/assets/images/JavaScript.png"
+                          alt="JavaScript Certificate"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="certificate-content text-center">
+                        <h5 class="fw-bold mb-3">JavaScript</h5>
+                        <p class="text-muted mb-3">Coursera</p>
+                        <a
+                          href="https://coursera.org/share/f086abdd293d558cb1e06331abcfdcc8"
+                          target="_blank"
+                          class="btn btn-primary"
+                        >
+                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Carousel controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#certificatesCarousel"
+              data-bs-slide="prev"
             >
-              View Source Code
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="col-md-6 mb-4">
-        <div class="project shadow-lg rounded-5 position-relative">
-          <a
-            href="../../assets/img/weather.png"
-            data-lightbox="images"
-            data-title="Weather App"
-          >
-            <img
-              src="../../assets/images/weather.png"
-              alt="Weather Project"
-              class="img-fluid rounded-3 project-img"
-            />
-          </a>
-          <div class="position-absolute bottom-0 start-0 p-3">
-            <a
-              href="https://github.com/ibrahimelothmani?tab=repositories"
-              target="_blank"
-              class="btn btn-primary btn-sm"
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#certificatesCarousel"
+              data-bs-slide="next"
             >
-              View Source Code
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="col-md-6 mb-4">
-        <div class="project shadow-lg rounded-5 position-relative">
-          <a
-            href="../../assets/img/Laptop.png"
-            data-lightbox="images"
-            data-title="Laptop Store"
-          >
-            <img
-              src="../../assets/images/Laptop.png"
-              alt="Laptop Store Project"
-              class="img-fluid rounded-3 project-img"
-            />
-          </a>
-          <div class="position-absolute bottom-0 start-0 p-3">
-            <a
-              href="https://github.com/ibrahimelothmani/Library"
-              target="_blank"
-              class="btn btn-primary btn-sm"
-            >
-              View Source Code
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="col-md-6 mb-4">
-        <div class="project shadow-lg rounded-5 position-relative">
-          <a
-            href="../../assets/img/vera.png"
-            data-lightbox="images"
-            data-title="Vera E-commerce"
-          >
-            <img
-              src="../../assets/images/vera.png"
-              alt="Vera Project"
-              class="img-fluid rounded-3 project-img"
-            />
-          </a>
-          <div class="position-absolute bottom-0 start-0 p-3">
-            <a
-              href="https://github.com/ibrahimelothmani/ERP-System"
-              target="_blank"
-              class="btn btn-primary btn-sm"
-            >
-              View Source Code
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="col-md-6 mb-4">
-        <div class="project shadow-lg rounded-5 position-relative">
-          <a
-            href="../../assets/img/web_analyzer.png"
-            data-lightbox="images"
-            data-title="Web Analyzer"
-          >
-            <img
-              src="../../assets/img/web_analyzer.png"
-              alt="Web Analyzer"
-              class="img-fluid rounded-3 project-img"
-            />
-          </a>
-          <div class="position-absolute bottom-0 start-0 p-3">
-            <a
-              href="https://github.com/ibrahimelothmani/AI-Powered-Cybersecurity-Threat-Detection-System"
-              target="_blank"
-              class="btn btn-primary btn-sm"
-            >
-              View Source Code
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="col-md-6 mb-4">
-        <div class="project shadow-lg rounded-5 position-relative">
-          <a
-            href="../../assets/img/expense.png"
-            data-lightbox="images"
-            data-title="expense"
-          >
-            <img
-              src="../../assets/img/expense.png"
-              alt="Expense"
-              class="img-fluid rounded-3 project-img"
-            />
-          </a>
-          <div class="position-absolute bottom-0 start-0 p-3">
-            <a
-              href="https://github.com/ibrahimelothmani/Expense-Tracker"
-              target="_blank"
-              class="btn btn-primary btn-sm"
-            >
-              View Source Code
-            </a>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators position-relative mt-4">
+              <button type="button" data-bs-target="#certificatesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#certificatesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#certificatesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -744,93 +524,793 @@
   </div>
 </section>
 
-<!-- Services -->
-<section class="services text-bg-dark py-5 position-relative">
+<!-- Experience Section -->
+<section id="experience" class="experience py-6">
+  <div class="container">
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <h4 class="text-uppercase fw-bold text-primary mb-2">Experience</h4>
+      <h2 class="display-5 fw-bold mb-4">My Professional Journey</h2>
+      <div class="title-underline mx-auto"></div>
+    </div>
+    
+    <div class="row justify-content-center">
+      <!-- Experience 1 -->
+      <div class="col-lg-10" data-aos="fade-up">
+        <div class="modern-card">
+          <div class="card-header">
+            <div class="d-flex align-items-center">
+              <div class="experience-year">
+                <span>2025</span>
+                <span>Present</span>
+              </div>
+              <h4 class="job-title ms-3 mb-0">Co-Founder</h4>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3 mb-3 mb-md-0">
+                <div class="company-logo-container">
+                  <img
+                    src="/assets/exp/EasyBuild.jpg"
+                    alt="EasyBuild"
+                    class="company-logo img-fluid rounded shadow"
+                  />
+                  <h5 class="company-name text-center mt-3 mb-0">EasyBuild</h5>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="job-description">
+                  <ul class="job-duties">
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Articulated EasyBuild's mission to revolutionize architectural design for architects, builders, and planners</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Iterated on features based on user input, such as enhancing 3D visualization and adding collaboration tools</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Researched competitors (e.g., AutoCAD, SketchUp) to position EasyBuild as a faster, AI-driven alternative</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Pitched to investors to secure funding to support AI model integration, marketing, and team expansion</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Built partnerships with architectural firms, real estate developers, and AI providers to enhance credibility and reach</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience 2 -->
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="modern-card">
+          <div class="card-header">
+            <div class="d-flex align-items-center">
+              <div class="experience-year">
+                <span>2024</span>
+                <span>Aug-Oct</span>
+              </div>
+              <h4 class="job-title ms-3 mb-0">Full Stack Developer</h4>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3 mb-3 mb-md-0">
+                <div class="company-logo-container">
+                  <img
+                    src="/assets/exp/ibh.png"
+                    alt="IBH"
+                    class="company-logo img-fluid rounded shadow"
+                  />
+                  <h5 class="company-name text-center mt-3 mb-0">IBH Ibn alhaythem</h5>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="job-description">
+                  <ul class="job-duties">
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Developed a comprehensive platform using Spring Boot for the backend and Angular for the frontend</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Designed and implemented RESTful APIs to facilitate seamless communication between client and server</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Created a responsive user interface that significantly improved user experience and engagement</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Collaborated with team members to gather requirements and iterated on features based on feedback</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience 3 -->
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
+        <div class="modern-card">
+          <div class="card-header">
+            <div class="d-flex align-items-center">
+              <div class="experience-year">
+                <span>2024</span>
+                <span>Apr-Jul</span>
+              </div>
+              <h4 class="job-title ms-3 mb-0">Back-End Developer</h4>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3 mb-3 mb-md-0">
+                <div class="company-logo-container">
+                  <img
+                    src="/assets/exp/upwork.jpg"
+                    alt="Upwork"
+                    class="company-logo img-fluid rounded shadow"
+                  />
+                  <h5 class="company-name text-center mt-3 mb-0">Upwork</h5>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="job-description">
+                  <ul class="job-duties">
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Designed and implemented robust REST APIs for various enterprise solutions</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Optimized database queries and structure to significantly improve application performance</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Collaborated with cross-functional teams to ensure seamless Agile development processes</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-circle-notch me-2"></i>
+                      <span>Implemented security best practices to protect sensitive user data and prevent vulnerabilities</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio py-6 bg-light">
+  <div class="container">
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <h4 class="text-uppercase fw-bold text-primary mb-2">Portfolio</h4>
+      <h2 class="display-5 fw-bold mb-4">My Featured Projects</h2>
+      <div class="title-underline mx-auto"></div>
+      <p class="lead col-md-8 mx-auto">Explore my latest projects showcasing my skills in web development, design, and problem-solving.</p>
+    </div>
+    
+    <!-- Filter Buttons -->
+    <div class="filter-button-group text-center mb-5" data-aos="fade-up">
+      <button 
+        class="filter-btn" 
+        [class.active]="currentProjectCategory === 'all'"
+        (click)="filterProjects('all')"
+      >
+        All Projects
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="currentProjectCategory === 'frontend'"
+        (click)="filterProjects('frontend')"
+      >
+        Frontend
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="currentProjectCategory === 'backend'"
+        (click)="filterProjects('backend')"
+      >
+        Backend
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="currentProjectCategory === 'fullstack'"
+        (click)="filterProjects('fullstack')"
+      >
+        Full Stack
+      </button>
+    </div>
+    
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img
+              src="/assets/images/drugstore.png"
+              alt="Drugstore Project"
+              class="img-fluid"
+            />
+            <div class="project-overlay">
+              <a 
+                href="/assets/images/drugstore.png" 
+                data-lightbox="projects" 
+                data-title="Drugstore Application"
+                class="project-view"
+              >
+                <i class="fas fa-eye fa-2x text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title fw-bold mb-2">Drugstore Application</h5>
+            <div class="project-tags mb-3">
+              <span class="project-tag">Angular</span>
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <p class="project-description mb-3">
+              A comprehensive e-commerce application for a pharmacy store with inventory management, order processing, and user authentication.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ibrahimelothmani/SportsStore"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-outline-primary"
+              >
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-primary"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img
+              src="/assets/images/weather.png"
+              alt="Weather App"
+              class="img-fluid"
+            />
+            <div class="project-overlay">
+              <a 
+                href="/assets/images/weather.png" 
+                data-lightbox="projects" 
+                data-title="Weather Application"
+                class="project-view"
+              >
+                <i class="fas fa-eye fa-2x text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title fw-bold mb-2">Weather Forecast App</h5>
+            <div class="project-tags mb-3">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">API</span>
+              <span class="project-tag">CSS3</span>
+            </div>
+            <p class="project-description mb-3">
+              Real-time weather application with forecasts, location-based searches, and interactive UI for displaying weather conditions.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ibrahimelothmani?tab=repositories"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-outline-primary"
+              >
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-primary"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img
+              src="/assets/images/Laptop.png"
+              alt="Laptop Store"
+              class="img-fluid"
+            />
+            <div class="project-overlay">
+              <a 
+                href="/assets/images/Laptop.png" 
+                data-lightbox="projects" 
+                data-title="Laptop Store"
+                class="project-view"
+              >
+                <i class="fas fa-eye fa-2x text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title fw-bold mb-2">Laptop E-Commerce Store</h5>
+            <div class="project-tags mb-3">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <p class="project-description mb-3">
+              Feature-rich e-commerce platform for laptops with advanced filtering, search, user reviews, and secure payment processing.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ibrahimelothmani/Library"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-outline-primary"
+              >
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-primary"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img
+              src="/assets/images/vera.png"
+              alt="Vera E-commerce"
+              class="img-fluid"
+            />
+            <div class="project-overlay">
+              <a 
+                href="/assets/images/vera.png" 
+                data-lightbox="projects" 
+                data-title="Vera E-commerce"
+                class="project-view"
+              >
+                <i class="fas fa-eye fa-2x text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title fw-bold mb-2">Vera ERP System</h5>
+            <div class="project-tags mb-3">
+              <span class="project-tag">Angular</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <p class="project-description mb-3">
+              Enterprise resource planning system with inventory management, customer relationship management, and sales analytics.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ibrahimelothmani/ERP-System"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-outline-primary"
+              >
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-primary"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 5 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img
+              src="/assets/img/web_analyzer.png"
+              alt="Web Analyzer"
+              class="img-fluid"
+            />
+            <div class="project-overlay">
+              <a 
+                href="/assets/img/web_analyzer.png" 
+                data-lightbox="projects" 
+                data-title="AI Cybersecurity System"
+                class="project-view"
+              >
+                <i class="fas fa-eye fa-2x text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title fw-bold mb-2">AI-Powered Cybersecurity</h5>
+            <div class="project-tags mb-3">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Django</span>
+            </div>
+            <p class="project-description mb-3">
+              Advanced cybersecurity system using machine learning to detect and prevent threats, vulnerabilities, and unusual patterns.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ibrahimelothmani/AI-Powered-Cybersecurity-Threat-Detection-System"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-outline-primary"
+              >
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-primary"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 6 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img
+              src="/assets/img/expense.png"
+              alt="Expense Tracker"
+              class="img-fluid"
+            />
+            <div class="project-overlay">
+              <a 
+                href="/assets/img/expense.png" 
+                data-lightbox="projects" 
+                data-title="Expense Tracker"
+                class="project-view"
+              >
+                <i class="fas fa-eye fa-2x text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title fw-bold mb-2">Expense Tracker</h5>
+            <div class="project-tags mb-3">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Chart.js</span>
+            </div>
+            <p class="project-description mb-3">
+              Personal finance application to track expenses, set budgets, and visualize spending habits through interactive charts.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ibrahimelothmani/Expense-Tracker"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-outline-primary"
+              >
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a
+                href="https://expense-tracker-xi-puce-21.vercel.app/"
+                target="_blank"
+                class="project-link-btn btn btn-sm btn-primary"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services py-6 position-relative">
   <div class="container position-relative">
-    <div class="text-center mb-5">
-      <h4 class="text-uppercase fw-bold text-primary">Services</h4>
-      <hr class="w-25 mx-auto" />
-      <h2 class="mb-4">What Can I Do For You?</h2>
-      <p class="lead">
-        Here are some of the services that I offer when it comes to web
-        development and business.
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <h4 class="text-uppercase fw-bold text-primary mb-2">Services</h4>
+      <h2 class="display-5 fw-bold mb-4 text-white">What I Offer</h2>
+      <div class="title-underline mx-auto"></div>
+      <p class="lead text-white col-md-8 mx-auto">
+        Specialized web development services tailored to your specific needs. From concept to deployment, I deliver high-quality, scalable solutions.
       </p>
     </div>
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <i class="fas fa-globe fa-3x text-primary mb-3"></i>
-        <h3 class="fs-3">Web Design</h3>
-        <hr class="w-25 mx-auto" />
+    
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h4 class="service-title fw-bold mb-3">Web Development</h4>
+          <p class="service-description">
+            Full-stack web development using modern technologies like Angular, React, Spring Boot, and Node.js to create responsive, high-performance web applications.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check text-primary me-2"></i> Responsive Design</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Frontend & Backend Development</li>
+            <li><i class="fas fa-check text-primary me-2"></i> API Integration</li>
+          </ul>
+        </div>
       </div>
-
-      <div class="col-md-6 text-center">
-        <i class="fas fa-code fa-3x text-primary mb-3"></i>
-        <h3 class="fs-3">Web Development</h3>
-        <hr class="w-25 mx-auto" />
+      
+      <!-- Service 2 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h4 class="service-title fw-bold mb-3">Responsive UI/UX Design</h4>
+          <p class="service-description">
+            Creating intuitive, user-friendly interfaces that work seamlessly across all devices. I focus on usability, accessibility, and visual appeal.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check text-primary me-2"></i> Mobile-First Design</li>
+            <li><i class="fas fa-check text-primary me-2"></i> User Experience Optimization</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Interactive Prototypes</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Service 3 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h4 class="service-title fw-bold mb-3">DevOps Solutions</h4>
+          <p class="service-description">
+            Implementing continuous integration/deployment pipelines, container orchestration, and infrastructure automation for streamlined development workflows.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check text-primary me-2"></i> CI/CD Pipeline Setup</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Docker Containerization</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Cloud Deployment</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Service 4 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h4 class="service-title fw-bold mb-3">Database Design & Optimization</h4>
+          <p class="service-description">
+            Designing efficient database structures, optimizing queries, and ensuring data integrity for SQL and NoSQL databases.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check text-primary me-2"></i> Schema Design</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Performance Tuning</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Data Migration</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Service 5 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h4 class="service-title fw-bold mb-3">Web Security</h4>
+          <p class="service-description">
+            Implementing robust security measures to protect applications from common vulnerabilities and ensure data privacy compliance.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check text-primary me-2"></i> Security Audits</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Authentication Systems</li>
+            <li><i class="fas fa-check text-primary me-2"></i> GDPR Compliance</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Service 6 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <h4 class="service-title fw-bold mb-3">Code Maintenance & Refactoring</h4>
+          <p class="service-description">
+            Improving existing codebases through refactoring, optimization, and implementing best practices for better maintainability.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check text-primary me-2"></i> Legacy Code Migration</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Performance Optimization</li>
+            <li><i class="fas fa-check text-primary me-2"></i> Technical Debt Reduction</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section class="contact text-bg-dark bg-gradient py-5">
+<!-- Contact Section -->
+<section id="contact" class="contact py-6 text-bg-dark bg-gradient">
   <div class="container">
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <h4 class="text-uppercase fw-bold text-primary mb-2">Contact</h4>
+      <h2 class="display-5 fw-bold mb-4 text-white">Get In Touch</h2>
+      <div class="title-underline mx-auto"></div>
+      <p class="lead text-white col-md-8 mx-auto">
+        Have a project in mind or want to discuss potential collaboration? Feel free to reach out through the form below.
+      </p>
+    </div>
+    
     <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <div class="text-center mb-5">
-          <h4 class="text-uppercase fw-bold text-primary">Contact</h4>
-          <hr class="w-25 mx-auto" />
-          <h2 class="mb-4">I'd love to hear from you.</h2>
-          <p class="lead">
-            If you have any questions or would like to work together, please
-            contact me with the form below.
-          </p>
+      <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-up">
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <h4 class="fw-bold mb-4">Send Me a Message</h4>
+            
+            <form (ngSubmit)="submitContactForm()">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-group">
+                    <label for="name" class="form-label fw-medium mb-2">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your name"
+                      [(ngModel)]="contact.name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-group">
+                    <label for="email" class="form-label fw-medium mb-2">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      [(ngModel)]="contact.email"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group mb-4">
+                <label for="message" class="form-label fw-medium mb-2">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Enter your message"
+                  [(ngModel)]="contact.message"
+                  required
+                ></textarea>
+              </div>
+              
+              <!-- Error message -->
+              <div *ngIf="formSubmitError" class="alert alert-danger mb-4">
+                <i class="fas fa-exclamation-circle me-2"></i> {{ errorMessage }}
+              </div>
+              
+              <!-- Success message -->
+              <div *ngIf="formSubmitSuccess" class="alert alert-success mb-4">
+                <i class="fas fa-check-circle me-2"></i> Your message has been sent successfully. I'll get back to you soon!
+              </div>
+              
+              <div class="form-group">
+                <button 
+                  type="submit" 
+                  class="btn btn-primary w-100 py-3" 
+                  [disabled]="isFormSubmitting"
+                >
+                  <span *ngIf="!isFormSubmitting">Send Message</span>
+                  <span *ngIf="isFormSubmitting">
+                    <i class="fas fa-spinner fa-spin me-2"></i> Sending...
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-
-        <!-- Form -->
-        <form (ngSubmit)="submitContactForm()">
-          <div class="mb-5">
-            <input
-              type="text"
-              class="form-control border-top-0 border-start-0 border-end-0 rounded-1 border-muted"
-              name="name"
-              placeholder="Name"
-              [(ngModel)]="contact.name"
-              required
-            />
+      </div>
+      
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info h-100">
+          <h4 class="fw-bold mb-4">Contact Information</h4>
+          
+          <!-- Location -->
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Location</h6>
+              <p>Nabeul, Tunisia</p>
+            </div>
           </div>
-          <div class="mb-5">
-            <input
-              type="email"
-              class="form-control border-top-0 border-start-0 border-end-0 rounded-1 border-muted"
-              name="email"
-              placeholder="Email"
-              [(ngModel)]="contact.email"
-              required
-            />
+          
+          <!-- Email -->
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Email</h6>
+              <p>
+                <a href="mailto:ibrahimelothmanii&#64;gmail.com" class="text-white text-decoration-none">
+                  ibrahimelothmanii&#64;gmail.com
+                </a>
+              </p>
+            </div>
           </div>
-          <div class="mb-5">
-            <textarea
-              class="form-control border-top-0 border-start-0 border-end-0 rounded-1 border-muted"
-              name="message"
-              placeholder="Message"
-              [(ngModel)]="contact.message"
-              required
-            ></textarea>
+          
+          <!-- Social Links -->
+          <h6 class="fw-bold mb-3 mt-4">Find me on</h6>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/ibrahim-el-othmani-elothmani/" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/ibrahimelothmani" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://hub.docker.com/u/ibrahimelothmani98" target="_blank" aria-label="Docker Hub">
+              <i class="fab fa-docker"></i>
+            </a>
           </div>
-          <div class="mb-5 d-grid">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
+    
+    <!-- Back to top button -->
+    <div class="back-to-top" [class.show]="true" (click)="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    
     <!-- Footer -->
-    <div class="d-flex mt-5">
-      <p class="flex-grow-1">Copyright &copy; 2024</p>
-      <div class="hstack gap-1">
-        <a class="text-decoration-none" href="#">
-          <i class="fa-solid fa-arrow-up-long text-white"></i>
-        </a>
+    <div class="footer text-center text-white mt-5 pt-5">
+      <div class="container">
+        <p class="mb-1">© 2024 Ibrahim El Othmani. All Rights Reserved.</p>
+        <p class="small">Made with <i class="fas fa-heart text-primary"></i> and Angular</p>
       </div>
     </div>
   </div>

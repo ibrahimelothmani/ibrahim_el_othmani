@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
+import { ThemeTogglerComponent } from './theme-toggler/theme-toggler.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     DBComponent,
     SuccessComponent,
     HeaderComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ThemeTogglerComponent
   ],
   imports: [
     BrowserModule,

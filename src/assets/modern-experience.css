@@ -1,0 +1,169 @@
+/* New Experience Section Styling */
+.modern-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.modern-card .card-header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-bottom: none;
+  color: white !important;
+}
+
+.modern-card .card-body {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.experience-year {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 50px;
+}
+
+.experience-year span:first-child {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.experience-year span:last-child {
+  font-size: 0.9rem;
+}
+
+.job-title {
+  color: white !important;
+  font-weight: 700;
+}
+
+.company-name {
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.company-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-duties {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.job-duties li {
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  color: #333;
+}
+
+.job-duties li:last-child {
+  border-bottom: none;
+}
+
+.job-duties li i {
+  margin-top: 5px;
+  min-width: 24px;
+  color: var(--primary-color);
+}
+
+/* Dark mode fixes for Experience Section */
+[data-theme="dark"] .modern-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .modern-card .card-body {
+  background-color: #1e1e1e;
+}
+
+[data-theme="dark"] .modern-card:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .job-duties li {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  color: #e9ecef !important;
+}
+
+[data-theme="dark"] .experience-year {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .company-name {
+  color: #e9ecef !important;
+}
+
+[data-theme="dark"] .job-title {
+  color: white !important;
+}
+
+[data-theme="dark"] .job-duties li i {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .card-header {
+  color: white !important;
+}
+
+@media (max-width: 767px) {
+  .experience-year {
+    padding: 5px 15px;
+    min-width: 80px;
+  }
+  
+  .experience-year span:first-child {
+    font-size: 1rem;
+  }
+  
+  .experience-year span:last-child {
+    font-size: 0.8rem;
+  }
+  
+  .modern-card .card-header {
+    padding: 15px;
+  }
+  
+  .modern-card .card-body {
+    padding: 20px;
+  }
+  
+  .company-logo {
+    width: 100px;
+    height: 100px;
+  }
+}

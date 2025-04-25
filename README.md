@@ -1,27 +1,73 @@
-# Portfolio
+# Ibrahim El Othmani Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+A modern, professional portfolio website built with Angular.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Modern Design**: Clean and professional design with smooth animations and transitions
+- **Responsive**: Fully responsive and optimized for all devices
+- **Dark/Light Mode**: Theme toggle with preferences saved in local storage
+- **Interactive UI**: Engaging user experience with AOS animations
+- **Project Showcase**: Filterable portfolio section to highlight projects
+- **Contact Form**: Integrated with Firebase for message storage
+- **Accessibility**: WCAG 2.1 compliant with proper ARIA labels and keyboard navigation
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 18.2.0**: Modern front-end framework
+- **Bootstrap 5**: CSS framework for responsive design
+- **Firebase**: Backend services for contact form
+- **AOS**: Animate On Scroll library for scroll animations
+- **Font Awesome**: Icon library
+- **Lightbox**: For image galleries
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `src/app/home`: Main portfolio component
+- `src/app/header`: Navigation and hero section
+- `src/app/theme-toggler`: Dark/light mode toggle component
+- `src/assets`: Images, PDFs, and other static assets
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   ```
 
-## Running end-to-end tests
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Set up environment variables for Firebase in `src/environments/environment.ts`
 
-## Further help
+4. Run the development server:
+   ```bash
+   ng serve
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+5. Open your browser and navigate to `http://localhost:4200`
+
+## Deployment
+
+The project is set up for easy deployment to Vercel. Simply connect your repository to Vercel and it will automatically deploy on changes to the main branch.
+
+## Customization
+
+To customize this portfolio for your own use:
+
+1. Update the personal information in the components
+2. Replace project images and descriptions
+3. Update the resume PDFs in the assets folder
+4. Customize the color scheme in `src/styles.css`
+
+## License
+
+MIT
+
+## Contact
+
+Ibrahim El Othmani - [ibrahimelothmanii@gmail.com](mailto:ibrahimelothmanii@gmail.com)
+
+Project Link: [https://github.com/ibrahimelothmani/Portfolio](https://github.com/ibrahimelothmani/Portfolio)

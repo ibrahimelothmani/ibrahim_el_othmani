@@ -1,11 +1,23 @@
 {
-  "headers": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
-        { "key": "Cross-Origin-Embedder-Policy", "value": "require-corp" }
-      ]
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "ng build",
+        "outputDirectory": "dist/portfolio/browser"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(assets|favicon.ico)/(.*)",
+      "dest": "/assets/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }

@@ -1,105 +1,570 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Variables for theme colors - light mode */
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3a0ca3;
+  --text-color: #2b2d42;
+  --bg-color: #ffffff;
+  --card-bg: #f8f9fa;
+  --section-bg: #f1f3f5;
+  --border-color: #dee2e6;
+  --success-color: #2ecc71;
+  --header-overlay: rgba(0, 0, 0, 0.7);
+  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Inter', sans-serif;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --primary-color: #4361ee;
+  --secondary-color: #3a0ca3;
+  --text-color: #e9ecef;
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --section-bg: #181818;
+  --border-color: #333333;
+  --success-color: #2ecc71;
+  --header-overlay: rgba(0, 0, 0, 0.8);
+  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Simplified dark mode implementation with focus on visibility */
+[data-theme="dark"] {
+  color: #e9ecef;
+}
+
+/* Force white text for all headings */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] .display-5,
+[data-theme="dark"] .fw-bold,
+[data-theme="dark"] .section-title h2 {
+  color: #ffffff !important;
+}
+
+/* Force proper background for all sections */
+[data-theme="dark"] section {
+  background-color: var(--bg-color);
+}
+
+[data-theme="dark"] section.bg-light {
+  background-color: var(--section-bg) !important;
+}
+
+/* Force proper styling for all cards */
+[data-theme="dark"] .card,
+[data-theme="dark"] .experience-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .education-card,
+[data-theme="dark"] .certificate-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* Ensure all paragraphs and text elements are visible */
+[data-theme="dark"] p,
+[data-theme="dark"] li,
+[data-theme="dark"] a:not(.btn),
+[data-theme="dark"] span:not(.badge):not(.btn),
+[data-theme="dark"] .lead,
+[data-theme="dark"] .text-muted {
+  color: #e9ecef !important;
+}
+
+/* Fix for section titles with transparent background */
+[data-theme="dark"] .section-title h2,
+[data-theme="dark"] .section-title .display-5,
+[data-theme="dark"] .display-5.fw-bold.mb-4 {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+/* Custom Button Styles */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
 .header {
-    background: #151515 url("./assets/images/intro-bg.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  .header::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-  }
-  
-  .header .text-container {
-    z-index: 10;
-  }
-  
-  .header .roles {
-    font-family: "lora-regular", serif;
-  }
-  
-  .header .social {
-    bottom: 50px;
-  }
-  
-  .about-img {
-    width: 200px;
+  background: var(--bg-color) url("./assets/images/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--header-overlay);
+}
+
+.header .text-container {
+  z-index: 10;
+}
+
+.header .roles {
+  font-family: var(--heading-font);
+  letter-spacing: 1px;
+}
+
+.header .social {
+  bottom: 50px;
+}
+
+.header .social a {
+  transition: transform 0.3s ease;
+}
+
+.header .social a:hover {
+  transform: translateY(-5px);
+}
+
+/* About section */
+.about-img {
+  width: 250px;
+  box-shadow: var(--card-shadow);
+  border: 5px solid var(--primary-color);
+  transition: transform 0.5s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+/* Project cards */
+.project {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  background-color: var(--card-bg);
+  transition: all 0.4s ease;
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+/* Education section */
+.education-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--card-shadow);
+  border: 3px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.education-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Experience cards */
+.experience-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  background-color: var(--card-bg);
+  padding: 25px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.company-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.company-logo {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+}
+
+.job-duties li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 10px;
+}
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+}
+
+.timeline-date {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Skills Section */
+.software-skill-inline {
+  transition: transform 0.3s ease;
+}
+
+.software-skill-inline:hover {
+  transform: translateY(-10px);
+}
+
+.software-skill-inline i {
+  color: var(--primary-color);
+}
+
+/* Services section */
+.services {
+  background: url("./assets/images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--header-overlay);
+}
+
+.services .container {
+  z-index: 10;
+}
+
+/* Contact section */
+.contact input, .contact textarea {
+  background-color: transparent;
+  border: 2px solid var(--border-color);
+  padding: 15px;
+  color: var(--text-color);
+}
+
+.contact input:focus, .contact textarea:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(30deg);
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  section {
+    padding: 4rem 0;
   }
   
   .project-img {
-      width: 100%; 
-      height: auto; /* Automatically adjust height to maintain aspect ratio */
-      max-height: 250px; /* Cap the height for larger screens */
-      object-fit: cover;
-      border-radius: 15px;
+    max-height: 200px;
   }
   
-  .project:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
-    opacity: 0.8;
+  .header .social i {
+    font-size: 30px;
   }
   
-  .services {
-    background: url("./assets/images/bg.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
+  .header .roles {
+    font-size: 18px !important;
   }
   
-  .services::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+  .about-content {
+    flex-direction: column;
+    text-align: center;
   }
   
-  .services .container {
-    z-index: 10;
-  }
-  .education-logo {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  
-  
-  @media (max-width: 767px) {
-      .project-img {
-          max-height: 200px;
-      }
-    .header .social i {
-      font-size: 30px;
-    }
-    .header .roles {
-      font-size: 18px !important;
-    }
-    .about-content {
-      flex-direction: column;
-    }
-    .stats .stat {
-      border-right: 0 !important;
-      margin-bottom: 40px;
-      border-bottom: var(--bs-dark) solid 1px;
-      padding-bottom: 20px;
-    }
+  .experience-card {
+    margin-bottom: 3rem;
   }
   
-  .carousel-inner .row {
-      display: flex;
-      justify-content: center;
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
   }
-  .project img {
-      width: 100%;
-      height: auto;
-  }
-  
+}
+
+[data-theme="dark"] .section-title h2,
+[data-theme="dark"] .section-title .display-5,
+[data-theme="dark"] .section-title h4,
+[data-theme="dark"] .company-name,
+[data-theme="dark"] .project-title,
+[data-theme="dark"] .service-title,
+[data-theme="dark"] .job-title {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .title-underline {
+  background-color: var(--primary-color);
+}
+
+[data-theme="dark"] .section-title .lead {
+  color: #e9ecef !important;
+}
+
+/* Fix heading backgrounds */
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] h4, 
+[data-theme="dark"] h5, 
+[data-theme="dark"] h6 {
+  background-color: transparent !important;
+}
+
+/* Fix for main section headings in dark mode */
+[data-theme="dark"] #experience h2,
+[data-theme="dark"] #education h2,
+[data-theme="dark"] #portfolio h2,
+[data-theme="dark"] #certificates h2,
+[data-theme="dark"] #about h2 {
+  color: #ffffff !important;
+}
+
+/* Fix Education Card in Dark Mode */
+[data-theme="dark"] .education-card {
+  background-color: var(--card-bg);
+  color: #e9ecef;
+  box-shadow: var(--card-shadow);
+}
+
+[data-theme="dark"] .education-card h4,
+[data-theme="dark"] .education-card h6 {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+/* Fix Experience Cards in Dark Mode */
+[data-theme="dark"] .experience-card {
+  background-color: var(--card-bg);
+  color: #e9ecef;
+}
+
+/* Fix for My Professional Journey title */
+[data-theme="dark"] #experience .display-5,
+[data-theme="dark"] #education .display-5 {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] #about p,
+[data-theme="dark"] #about .lead,
+[data-theme="dark"] .profile-list p,
+[data-theme="dark"] .certificate-content p {
+  color: #e9ecef !important;
+  background-color: transparent !important;
+}
+
+/* Make sure bg-light sections have proper background in dark mode */
+[data-theme="dark"] .bg-light,
+[data-theme="dark"] section.bg-light {
+  background-color: var(--section-bg) !important;
+}
+
+/* Fix experience and education heading */
+[data-theme="dark"] .experience .section-title h2,
+[data-theme="dark"] .education .section-title h2 {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+/* Fix for specific section titles in dark mode */
+[data-theme="dark"] .display-5.fw-bold.mb-4 {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+/* Override navbar styling */
+.navbar.navbar-dark.bg-dark {
+  background-color: #121212 !important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+/* Additional dark mode fixes */
+[data-theme="dark"] .fw-bold {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .project-content {
+  background-color: var(--card-bg) !important;
+}
+
+[data-theme="dark"] .project-tag {
+  background-color: #2d2d2d;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: white !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* Fix specifically for Experience section title in dark mode */
+[data-theme="dark"] #experience .section-title h2.display-5.fw-bold.mb-4 {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] #experience .section-title h4.text-uppercase.fw-bold.text-primary.mb-2 {
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+}
+
+/* Force all section titles in dark mode to have proper contrast */
+[data-theme="dark"] .section-title h2,
+[data-theme="dark"] .section-title h4,
+[data-theme="dark"] .section-title .display-5 {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+/* Fix Experience section specifically */
+[data-theme="dark"] #experience {
+  background-color: var(--bg-color) !important;
+}
+
+[data-theme="dark"] #experience .section-title {
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] #experience h2.display-5,
+[data-theme="dark"] #experience h4.text-uppercase,
+[data-theme="dark"] #experience .section-title .display-5,
+[data-theme="dark"] #experience .section-title h2,
+[data-theme="dark"] #experience .card-header,
+[data-theme="dark"] #experience .job-title {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] #experience .modern-card .company-name {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] #experience .job-duties li {
+  color: var(--text-color) !important;
+}
   
