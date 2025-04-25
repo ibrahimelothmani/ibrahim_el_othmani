@@ -8,15 +8,14 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
+      (click)="toggleNavbar()"
       aria-controls="navbarNav"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" [ngClass]="{'show': !isNavCollapsed}" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="#" [class.active]="activeSection === 'home'">Home</a>
@@ -73,16 +72,12 @@
 
     <div class="social d-flex gap-4 position-absolute">
       <a href="https://www.linkedin.com/in/ibrahim-el-othmani-elothmani/" aria-label="LinkedIn" target="_blank">
-        <i class="fab fa-linkedin fa-2x text-white"></i>
+        <i class="fab fa-linkedin fa-3x text-white"></i>
       </a>
       <a href="https://github.com/ibrahimelothmani" aria-label="GitHub" target="_blank">
-        <i class="fab fa-github fa-2x text-white"></i>
-      </a>
-      <a href="https://hub.docker.com/u/ibrahimelothmani98" aria-label="Docker Hub" target="_blank">
-        <i class="fab fa-docker fa-2x text-white"></i>
+        <i class="fab fa-github fa-3x text-white"></i>
       </a>
     </div>
-    
     <div class="scroll-down">
       <a href="#about">
         <i class="fas fa-chevron-down fa-2x text-white bounce"></i>

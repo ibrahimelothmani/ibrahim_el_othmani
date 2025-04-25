@@ -650,3 +650,72 @@
   }
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Improved dropdown menu for mobile */
+  .dropdown-menu.show {
+    width: 100%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 0;
+  }
+  
+  .dropdown-item {
+    padding: 10px 15px;
+  }
+  
+  /* Fix flex layout on small screens */
+  .d-flex.flex-wrap {
+    justify-content: center;
+  }
+  
+  /* Adjust sections padding on mobile */
+  section {
+    padding: 60px 0;
+  }
+
+  /* Make buttons more mobile friendly */
+  .btn {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+  }
+
+  /* Ensure better touch targets */
+  a, button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Better spacing for card elements */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust font sizes for mobile */
+  h1, .h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2, .h2 {
+    font-size: 1.75rem !important;
+  }
+  
+  .display-5 {
+    font-size: 1.75rem !important;
+  }
+  
+  .lead {
+    font-size: 1rem !important;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 769px) and (max-width: 991px) {
+  .display-5 {
+    font-size: 2.5rem !important;
+  }
+}
+

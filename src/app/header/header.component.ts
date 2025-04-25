@@ -7,12 +7,34 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   activeSection: string = 'home';
+  isNavCollapsed = true;
   
   constructor() { }
 
   ngOnInit(): void {
     this.setupTypingEffect();
     this.checkScroll();
+    this.setupNavbarToggle();
+  }
+
+  toggleNavbar() {
+    this.isNavCollapsed = !this.isNavCollapsed;
+  }
+
+  setupNavbarToggle() {
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      const navbarToggler = document.querySelector('.navbar-toggler') as HTMLElement;
+      const navbarCollapse = document.querySelector('.navbar-collapse') as HTMLElement;
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 992) {
+            navbarToggler?.click();
+          }
+        });
+      });
+    });
   }
 
   @HostListener('window:scroll', ['$event'])

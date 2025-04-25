@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   formSubmitError = false;
   errorMessage = '';
   currentProjectCategory = 'all';
+  isCvDropdownOpen = false;
 
   constructor(
     private db: AngularFireDatabase,
@@ -33,6 +34,24 @@ export class HomeComponent implements OnInit {
     });
     
     this.setupEventListeners();
+  }
+  
+  toggleCvDropdown() {
+    this.isCvDropdownOpen = !this.isCvDropdownOpen;
+    
+    // Close dropdown when clicking outside
+    if (this.isCvDropdownOpen) {
+      setTimeout(() => {
+        const clickHandler = (event: MouseEvent) => {
+          const dropdown = document.getElementById('cvDropdown');
+          if (dropdown && !dropdown.contains(event.target as Node)) {
+            this.isCvDropdownOpen = false;
+            document.removeEventListener('click', clickHandler);
+          }
+        };
+        document.addEventListener('click', clickHandler);
+      }, 0);
+    }
   }
   
   setupEventListeners() {

@@ -65,12 +65,13 @@
             <button
               class="btn btn-outline-primary dropdown-toggle"
               type="button"
-              data-bs-toggle="dropdown"
+              id="cvDropdown" 
               aria-expanded="false"
+              (click)="toggleCvDropdown()"
             >
               <i class="fas fa-download me-2"></i> Download CV
             </button>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul class="dropdown-menu dropdown-menu-end" [class.show]="isCvDropdownOpen">
               <li>
                 <a
                   class="dropdown-item"
@@ -1293,9 +1294,6 @@
             <a href="https://github.com/ibrahimelothmani" target="_blank" aria-label="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://hub.docker.com/u/ibrahimelothmani98" target="_blank" aria-label="Docker Hub">
-              <i class="fab fa-docker"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -1309,8 +1307,7 @@
     <!-- Footer -->
     <div class="footer text-center text-white mt-5 pt-5">
       <div class="container">
-        <p class="mb-1">© 2024 Ibrahim El Othmani. All Rights Reserved.</p>
-        <p class="small">Made with <i class="fas fa-heart text-primary"></i> and Angular</p>
+        <p class="mb-1">© 2025 Ibrahim El Othmani. All Rights Reserved.</p>
       </div>
     </div>
   </div>
