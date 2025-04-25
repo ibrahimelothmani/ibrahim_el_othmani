@@ -60,8 +60,14 @@
   min-height: 40px;
 }
 
+.social-links-container {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 .social {
-  bottom: 130px;
+  display: flex;
+  justify-content: center;
 }
 
 .social a {
@@ -142,8 +148,6 @@
   }
   
   .social {
-    position: relative;
-    bottom: auto;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
