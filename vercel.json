@@ -12,11 +12,19 @@
   ],
   "routes": [
     {
-      "src": "/(assets|favicon.ico)/(.*)",
-      "dest": "/assets/$2"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
-      "src": "/(.*)",
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/(.*\\.[a-z0-9]+$)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)", 
       "dest": "/index.html"
     }
   ]
