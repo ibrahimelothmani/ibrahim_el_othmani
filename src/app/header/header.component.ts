@@ -6,8 +6,8 @@ import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
-  private text = 'I am Ibrahim El Othmani'; // Text for typing effect
-  private typingDelay = 70; // Typing delay in milliseconds
+  private text: string = 'I am Ibrahim El Othmani'; // Text for typing effect
+  private typingDelay: number = 70; // Typing delay in milliseconds
 
   constructor(private elRef: ElementRef) {}
 
