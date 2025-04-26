@@ -1,20 +1,26 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark py-2">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
+    <!-- Brand - visible on desktop only -->
+    <a class="navbar-brand d-none d-lg-flex align-items-center" href="#">
       <img src="assets/images/logo.png" alt="Logo" width="35" height="35" class="rounded-circle me-2">
       Ibrahim El Othmani
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      (click)="toggleNavbar()"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    
+    <!-- Mobile View: Brand hidden, toggle button positioned left -->
+    <div class="d-flex d-lg-none justify-content-between w-100">
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        (click)="toggleNavbar()"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    
     <div class="collapse navbar-collapse" [ngClass]="{'show': !isNavCollapsed}" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">

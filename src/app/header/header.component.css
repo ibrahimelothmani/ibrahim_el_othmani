@@ -110,7 +110,7 @@
 /* Mobile Responsive Styles */
 @media (max-width: 991px) {
   .navbar {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
   }
   
   .navbar-collapse {
@@ -140,11 +140,19 @@
   .navbar-toggler {
     border: none;
     padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
   }
   
   .social {
@@ -155,6 +163,10 @@
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
   .header h1 {
     font-size: 2.5rem;
   }
