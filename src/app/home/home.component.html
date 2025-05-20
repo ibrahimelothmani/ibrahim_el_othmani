@@ -8,55 +8,75 @@
           <img
             src="/assets/images/ibrahim.png"
             alt="Ibrahim El Othmani"
-            class="about-img img-fluid rounded-3 shadow-lg"
+            class="about-img img-fluid rounded-5 shadow-lg"
           />
-          <div class="experience-badge">
+          <!-- <div class="experience-badge">
             <span class="exp-years">1+</span>
             <span class="exp-text">Years of Experience</span>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-lg-7" data-aos="fade-left">
         <div class="section-title mb-4">
           <h4 class="text-uppercase fw-bold text-primary mb-2">About Me</h4>
-          <h2 class="display-5 fw-bold mb-4">Full Stack Developer & DevOps Enthusiast</h2>
+          <h2 class="display-5 fw-bold mb-4">
+            Full Stack Developer & DevOps Enthusiast
+          </h2>
           <div class="title-underline"></div>
         </div>
-        
+
         <p class="lead mb-4">
           I'm a web developer with extensive experience and a passion for
           computers. I learned to code from a very young age in various computer
           languages and technologies (JavaScript, PHP, Java, Symfony, Angular,
-          Spring Boot, etc.) and created personal projects.
+          Spring Boot, etc...) and created personal projects.
         </p>
-        
+
         <p class="mb-4">
-          I master the technical steps of creating a website or web application, from understanding user
-          needs to frontend and backend development, and maintenance. I am
-          currently expanding my expertise to include DevOps practices, focusing
-          on CI/CD pipelines, containerization (Docker), infrastructure as code
-          (Terraform/Ansible), and cloud platforms (AWS/Azure/GCP). My goal is to
-          bridge the gap between development and operations, ensuring seamless
-          deployment and scalable architectures.
+          I master the technical steps of creating a website or web application,
+          from understanding user needs to frontend and backend development, and
+          maintenance. I am currently expanding my expertise to include DevOps
+          practices, focusing on CI/CD pipelines, containerization (Docker),
+          infrastructure as code (Terraform/Ansible), and cloud platforms
+          (AWS/Azure/GCP). My goal is to bridge the gap between development and
+          operations, ensuring seamless deployment and scalable architectures.
         </p>
-        
+
         <div class="row mb-4">
           <div class="col-md-6">
             <ul class="about-list">
-              <li><i class="fas fa-check-circle text-primary"></i> Frontend & Backend Development</li>
-              <li><i class="fas fa-check-circle text-primary"></i> Cloud Architecture & DevOps</li>
-              <li><i class="fas fa-check-circle text-primary"></i> Database Design & Optimization</li>
+              <li>
+                <i class="fas fa-check-circle text-primary"></i> Frontend &
+                Backend Development
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-primary"></i> Cloud
+                Architecture & DevOps
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-primary"></i> Database Design
+                & Optimization
+              </li>
             </ul>
           </div>
           <div class="col-md-6">
             <ul class="about-list">
-              <li><i class="fas fa-check-circle text-primary"></i> Responsive Web Design</li>
-              <li><i class="fas fa-check-circle text-primary"></i> CI/CD Implementation</li>
-              <li><i class="fas fa-check-circle text-primary"></i> API Development & Integration</li>
+              <li>
+                <i class="fas fa-check-circle text-primary"></i> Responsive Web
+                Design
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-primary"></i> CI/CD
+                Implementation
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-primary"></i> API Development
+                & Integration
+              </li>
             </ul>
           </div>
         </div>
-        
+
         <div class="d-flex flex-wrap gap-3">
           <a href="#contact" class="btn btn-primary">
             <i class="fas fa-paper-plane me-2"></i> Hire Me
@@ -65,13 +85,16 @@
             <button
               class="btn btn-outline-primary dropdown-toggle"
               type="button"
-              id="cvDropdown" 
+              id="cvDropdown"
               aria-expanded="false"
               (click)="toggleCvDropdown()"
             >
               <i class="fas fa-download me-2"></i> Download CV
             </button>
-            <ul class="dropdown-menu dropdown-menu-end" [class.show]="isCvDropdownOpen">
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              [class.show]="isCvDropdownOpen"
+            >
               <li>
                 <a
                   class="dropdown-item"
@@ -103,12 +126,17 @@
   <div class="container">
     <div class="row">
       <!-- Profile Column -->
-      <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+      <div
+        class="col-lg-5 mb-5 mb-lg-0"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="card border-0 shadow-sm h-100">
           <div class="card-body p-4">
             <h3 class="text-uppercase fw-bold text-primary mb-4">Profile</h3>
             <p class="mb-4">
-              Here is some more info about myself to help you get to know me better.
+              Here is some more info about myself to help you get to know me
+              better.
             </p>
             <ul class="profile-list">
               <li class="mb-3 d-flex align-items-center">
@@ -136,7 +164,10 @@
                 <div>
                   <h6 class="fw-bold mb-1">Email:</h6>
                   <p class="mb-0">
-                    <a href="mailto:ibrahimelothmanii&#64;gmail.com" class="text-decoration-none">
+                    <a
+                      href="mailto:ibrahimelothmanii&#64;gmail.com"
+                      class="text-decoration-none"
+                    >
                       ibrahimelothmanii&#64;gmail.com
                     </a>
                   </p>
@@ -163,7 +194,7 @@
         <div class="card border-0 shadow-sm h-100">
           <div class="card-body p-4">
             <h3 class="text-uppercase fw-bold text-primary mb-4">Skills</h3>
-            
+
             <!-- Skill Bars -->
             <div class="skill-bars mb-4">
               <div class="skill-item mb-4">
@@ -171,122 +202,237 @@
                   <span class="fw-bold">Frontend (HTML, CSS, JavaScript)</span>
                   <span class="fw-bold">95%</span>
                 </div>
-                <div class="progress" style="height: 10px;">
-                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="95"></div>
+                <div class="progress" style="height: 10px">
+                  <div
+                    class="progress-bar skill-progress"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    data-value="95"
+                  ></div>
                 </div>
               </div>
-              
+
               <div class="skill-item mb-4">
                 <div class="d-flex justify-content-between mb-1">
                   <span class="fw-bold">Backend (Java, PHP, Python)</span>
                   <span class="fw-bold">90%</span>
                 </div>
-                <div class="progress" style="height: 10px;">
-                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="90"></div>
+                <div class="progress" style="height: 10px">
+                  <div
+                    class="progress-bar skill-progress"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    data-value="90"
+                  ></div>
                 </div>
               </div>
-              
+
               <div class="skill-item mb-4">
                 <div class="d-flex justify-content-between mb-1">
-                  <span class="fw-bold">Frameworks (Angular, React, Spring)</span>
+                  <span class="fw-bold"
+                    >Frameworks (Angular, React, Spring)</span
+                  >
                   <span class="fw-bold">85%</span>
                 </div>
-                <div class="progress" style="height: 10px;">
-                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="85"></div>
+                <div class="progress" style="height: 10px">
+                  <div
+                    class="progress-bar skill-progress"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    data-value="85"
+                  ></div>
                 </div>
               </div>
-              
+
               <div class="skill-item mb-4">
                 <div class="d-flex justify-content-between mb-1">
                   <span class="fw-bold">Databases (SQL, NoSQL)</span>
                   <span class="fw-bold">80%</span>
                 </div>
-                <div class="progress" style="height: 10px;">
-                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="80"></div>
+                <div class="progress" style="height: 10px">
+                  <div
+                    class="progress-bar skill-progress"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    data-value="80"
+                  ></div>
                 </div>
               </div>
-              
+
               <div class="skill-item">
                 <div class="d-flex justify-content-between mb-1">
                   <span class="fw-bold">DevOps (Docker, CI/CD)</span>
                   <span class="fw-bold">75%</span>
                 </div>
-                <div class="progress" style="height: 10px;">
-                  <div class="progress-bar skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="75"></div>
+                <div class="progress" style="height: 10px">
+                  <div
+                    class="progress-bar skill-progress"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    data-value="75"
+                  ></div>
                 </div>
               </div>
             </div>
-            
+
             <!-- Tech Icons -->
             <h5 class="text-uppercase fw-bold mb-3">Technologies</h5>
             <div class="row text-center">
-              <div class="software-skills-main-div d-flex flex-wrap justify-content-center">
+              <div
+                class="software-skills-main-div d-flex flex-wrap justify-content-center"
+              >
                 <div class="software-skill-inline text-center m-2" name="java">
-                  <i class="fab fa-java" style="font-size: 2.5rem; color: #5382a1;"></i>
+                  <i
+                    class="fab fa-java"
+                    style="font-size: 2.5rem; color: #5382a1"
+                  ></i>
                   <p class="small">Java</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="python">
-                  <i class="fab fa-python" style="font-size: 2.5rem; color: #306998;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="python"
+                >
+                  <i
+                    class="fab fa-python"
+                    style="font-size: 2.5rem; color: #306998"
+                  ></i>
                   <p class="small">Python</p>
                 </div>
                 <div class="software-skill-inline text-center m-2" name="php">
-                  <i class="fab fa-php" style="font-size: 2.5rem; color: #777bb3;"></i>
+                  <i
+                    class="fab fa-php"
+                    style="font-size: 2.5rem; color: #777bb3"
+                  ></i>
                   <p class="small">PHP</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="javascript">
-                  <i class="fab fa-js" style="font-size: 2.5rem; color: #f7df1e;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="javascript"
+                >
+                  <i
+                    class="fab fa-js"
+                    style="font-size: 2.5rem; color: #f7df1e"
+                  ></i>
                   <p class="small">JavaScript</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="angular">
-                  <i class="fab fa-angular" style="font-size: 2.5rem; color: #dd0031;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="angular"
+                >
+                  <i
+                    class="fab fa-angular"
+                    style="font-size: 2.5rem; color: #dd0031"
+                  ></i>
                   <p class="small">Angular</p>
                 </div>
                 <div class="software-skill-inline text-center m-2" name="react">
-                  <i class="fab fa-react" style="font-size: 2.5rem; color: #61dafb;"></i>
+                  <i
+                    class="fab fa-react"
+                    style="font-size: 2.5rem; color: #61dafb"
+                  ></i>
                   <p class="small">React</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="laravel">
-                  <i class="fab fa-laravel" style="font-size: 2.5rem; color: #ff2d20;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="laravel"
+                >
+                  <i
+                    class="fab fa-laravel"
+                    style="font-size: 2.5rem; color: #ff2d20"
+                  ></i>
                   <p class="small">Laravel</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="spring">
-                  <i class="fas fa-leaf" style="font-size: 2.5rem; color: #6db33f;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="spring"
+                >
+                  <i
+                    class="fas fa-leaf"
+                    style="font-size: 2.5rem; color: #6db33f"
+                  ></i>
                   <p class="small">Spring</p>
                 </div>
                 <div class="software-skill-inline text-center m-2" name="html5">
-                  <i class="fab fa-html5" style="font-size: 2.5rem; color: #e34f26;"></i>
+                  <i
+                    class="fab fa-html5"
+                    style="font-size: 2.5rem; color: #e34f26"
+                  ></i>
                   <p class="small">HTML5</p>
                 </div>
                 <div class="software-skill-inline text-center m-2" name="css3">
-                  <i class="fab fa-css3-alt" style="font-size: 2.5rem; color: #264de4;"></i>
+                  <i
+                    class="fab fa-css3-alt"
+                    style="font-size: 2.5rem; color: #264de4"
+                  ></i>
                   <p class="small">CSS3</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="bootstrap">
-                  <i class="fab fa-bootstrap" style="font-size: 2.5rem; color: #7952b3;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="bootstrap"
+                >
+                  <i
+                    class="fab fa-bootstrap"
+                    style="font-size: 2.5rem; color: #7952b3"
+                  ></i>
                   <p class="small">Bootstrap</p>
                 </div>
                 <div class="software-skill-inline text-center m-2" name="Git">
-                  <i class="fab fa-git" style="font-size: 2.5rem; color: #f05032;"></i>
+                  <i
+                    class="fab fa-git"
+                    style="font-size: 2.5rem; color: #f05032"
+                  ></i>
                   <p class="small">Git</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="docker">
-                  <i class="fab fa-docker" style="font-size: 2.5rem; color: #2496ed;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="docker"
+                >
+                  <i
+                    class="fab fa-docker"
+                    style="font-size: 2.5rem; color: #2496ed"
+                  ></i>
                   <p class="small">Docker</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="kubernetes">
-                  <i class="fas fa-dharmachakra" style="font-size: 2.5rem; color: #326ce5;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="kubernetes"
+                >
+                  <i
+                    class="fas fa-dharmachakra"
+                    style="font-size: 2.5rem; color: #326ce5"
+                  ></i>
                   <p class="small">Kubernetes</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="jenkins">
-                  <i class="fab fa-jenkins" style="font-size: 2.5rem; color: #d33833;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="jenkins"
+                >
+                  <i
+                    class="fab fa-jenkins"
+                    style="font-size: 2.5rem; color: #d33833"
+                  ></i>
                   <p class="small">Jenkins</p>
                 </div>
-                <div class="software-skill-inline text-center m-2" name="github-actions">
-                  <i class="fab fa-github-alt" style="font-size: 2.5rem; color: #2088FF;"></i>
+                <div
+                  class="software-skill-inline text-center m-2"
+                  name="github-actions"
+                >
+                  <i
+                    class="fab fa-github-alt"
+                    style="font-size: 2.5rem; color: #2088ff"
+                  ></i>
                   <p class="small">GitHub Actions</p>
                 </div>
                 <div class="software-skill-inline text-center m-2" name="aws">
-                  <i class="fab fa-aws" style="font-size: 2.5rem; color: #ff9900;"></i>
+                  <i
+                    class="fab fa-aws"
+                    style="font-size: 2.5rem; color: #ff9900"
+                  ></i>
                   <p class="small">AWS</p>
                 </div>
               </div>
@@ -306,7 +452,7 @@
       <h2 class="display-5 fw-bold mb-4">My Academic Background</h2>
       <div class="title-underline mx-auto"></div>
     </div>
-    
+
     <div class="row">
       <!-- Education Item 1 -->
       <div class="col-lg-6 mb-4" data-aos="fade-up">
@@ -320,12 +466,14 @@
             <h4 class="fw-bold mb-2">Web Application Development</h4>
             <h6 class="text-primary mb-3">2i Formation - 2023</h6>
             <p class="mb-0">
-              Specialized training in modern web application development, focusing on frontend and backend technologies, responsive design, and database management.
+              Specialized training in modern web application development,
+              focusing on frontend and backend technologies, responsive design,
+              and database management.
             </p>
           </div>
         </div>
       </div>
-      
+
       <!-- Education Item 2 -->
       <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
         <div class="education-card">
@@ -336,9 +484,13 @@
           />
           <div>
             <h4 class="fw-bold mb-2">National Diploma in Civil Engineering</h4>
-            <h6 class="text-primary mb-3">Higher Institute of Technological Studies of Nabeul - 2020</h6>
+            <h6 class="text-primary mb-3">
+              Higher Institute of Technological Studies of Nabeul - 2020
+            </h6>
             <p class="mb-0">
-              Comprehensive education in civil engineering principles, project management, and technical design that provided a strong foundation for logical thinking and problem-solving.
+              Comprehensive education in civil engineering principles, project
+              management, and technical design that provided a strong foundation
+              for logical thinking and problem-solving.
             </p>
           </div>
         </div>
@@ -355,11 +507,15 @@
       <h2 class="display-5 fw-bold mb-4">Professional Certifications</h2>
       <div class="title-underline mx-auto"></div>
     </div>
-    
+
     <div class="row">
       <div class="col-12 mb-5" data-aos="fade-up">
         <div class="certificates-filter text-center">
-          <div id="certificatesCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div
+            id="certificatesCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-inner">
               <!-- First Slide -->
               <div class="carousel-item active">
@@ -374,14 +530,17 @@
                         />
                       </div>
                       <div class="certificate-content text-center">
-                        <h5 class="fw-bold mb-3">JavaScript Algorithms and Data Structures</h5>
+                        <h5 class="fw-bold mb-3">
+                          JavaScript Algorithms and Data Structures
+                        </h5>
                         <p class="text-muted mb-3">freeCodeCamp</p>
                         <a
                           href="https://www.freecodecamp.org/certification/Ibrahim_El_Othmani/javascript-algorithms-and-data-structures-v8"
                           target="_blank"
                           class="btn btn-primary"
                         >
-                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                          <i class="fas fa-external-link-alt me-2"></i> View
+                          Certificate
                         </a>
                       </div>
                     </div>
@@ -403,14 +562,15 @@
                           target="_blank"
                           class="btn btn-primary"
                         >
-                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                          <i class="fas fa-external-link-alt me-2"></i> View
+                          Certificate
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <!-- Second Slide -->
               <div class="carousel-item">
                 <div class="row g-4">
@@ -424,14 +584,17 @@
                         />
                       </div>
                       <div class="certificate-content text-center">
-                        <h5 class="fw-bold mb-3">Full Certificate of Web Development</h5>
+                        <h5 class="fw-bold mb-3">
+                          Full Certificate of Web Development
+                        </h5>
                         <p class="text-muted mb-3">Coursera</p>
                         <a
                           href="https://coursera.org/share/84ec367376b06e9ed6f545fa604e706a"
                           target="_blank"
                           class="btn btn-primary"
                         >
-                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                          <i class="fas fa-external-link-alt me-2"></i> View
+                          Certificate
                         </a>
                       </div>
                     </div>
@@ -453,14 +616,15 @@
                           target="_blank"
                           class="btn btn-primary"
                         >
-                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                          <i class="fas fa-external-link-alt me-2"></i> View
+                          Certificate
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <!-- Third Slide -->
               <div class="carousel-item">
                 <div class="row g-4">
@@ -481,7 +645,8 @@
                           target="_blank"
                           class="btn btn-primary"
                         >
-                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                          <i class="fas fa-external-link-alt me-2"></i> View
+                          Certificate
                         </a>
                       </div>
                     </div>
@@ -503,7 +668,8 @@
                           target="_blank"
                           class="btn btn-primary"
                         >
-                          <i class="fas fa-external-link-alt me-2"></i> View Certificate
+                          <i class="fas fa-external-link-alt me-2"></i> View
+                          Certificate
                         </a>
                       </div>
                     </div>
@@ -511,7 +677,7 @@
                 </div>
               </div>
             </div>
-            
+
             <!-- Carousel controls -->
             <button
               class="carousel-control-prev"
@@ -519,7 +685,10 @@
               data-bs-target="#certificatesCarousel"
               data-bs-slide="prev"
             >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button
@@ -528,15 +697,35 @@
               data-bs-target="#certificatesCarousel"
               data-bs-slide="next"
             >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Next</span>
             </button>
-            
+
             <!-- Carousel indicators -->
             <div class="carousel-indicators position-relative mt-4">
-              <button type="button" data-bs-target="#certificatesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#certificatesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#certificatesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button
+                type="button"
+                data-bs-target="#certificatesCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificatesCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#certificatesCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
           </div>
         </div>
@@ -553,7 +742,7 @@
       <h2 class="display-5 fw-bold mb-4">My Professional Journey</h2>
       <div class="title-underline mx-auto"></div>
     </div>
-    
+
     <div class="row justify-content-center">
       <!-- Experience 1 -->
       <div class="col-lg-10" data-aos="fade-up">
@@ -564,7 +753,7 @@
                 <span>2023</span>
                 <span>Present</span>
               </div>
-              <h4 class="job-title ms-3 mb-0">Co-Founder</h4>
+              <h4 class="job-title ms-3 mb-0">Full Stack Developer</h4>
             </div>
           </div>
           <div class="card-body">
@@ -584,23 +773,42 @@
                   <ul class="job-duties">
                     <li>
                       <i class="fas fa-circle-notch me-2"></i>
-                      <span>Articulated EasyBuild's mission to revolutionize architectural design for architects, builders, and planners</span>
+                      <span
+                        >Articulated EasyBuild's mission to revolutionize
+                        architectural design for architects, builders, and
+                        planners</span
+                      >
                     </li>
                     <li>
                       <i class="fas fa-circle-notch me-2"></i>
-                      <span>Iterated on features based on user input, such as enhancing 3D visualization and adding collaboration tools</span>
+                      <span
+                        >Iterated on features based on user input, such as
+                        enhancing 3D visualization and adding collaboration
+                        tools</span
+                      >
                     </li>
                     <li>
                       <i class="fas fa-circle-notch me-2"></i>
-                      <span>Researched competitors (e.g., AutoCAD, SketchUp) to position EasyBuild as a faster, AI-driven alternative</span>
+                      <span
+                        >Researched competitors (e.g., AutoCAD, SketchUp) to
+                        position EasyBuild as a faster, AI-driven
+                        alternative</span
+                      >
                     </li>
                     <li>
                       <i class="fas fa-circle-notch me-2"></i>
-                      <span>Pitched to investors to secure funding to support AI model integration, marketing, and team expansion</span>
+                      <span
+                        >Pitched to investors to secure funding to support AI
+                        model integration, marketing, and team expansion</span
+                      >
                     </li>
                     <li>
                       <i class="fas fa-circle-notch me-2"></i>
-                      <span>Built partnerships with architectural firms, real estate developers, and AI providers to enhance credibility and reach</span>
+                      <span
+                        >Built partnerships with architectural firms, real
+                        estate developers, and AI providers to enhance
+                        credibility and reach</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -609,9 +817,9 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Experience 2 -->
-      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+      <!-- <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
         <div class="modern-card">
           <div class="card-header">
             <div class="d-flex align-items-center">
@@ -659,15 +867,15 @@
             </div>
           </div>
         </div>
-      </div>
-      
+      </div> -->
+
       <!-- Experience 3 -->
-      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
+      <!-- <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
         <div class="modern-card">
           <div class="card-header">
             <div class="d-flex align-items-center">
               <div class="experience-year">
-                <span>2024</span>
+                <span>2022</span>
                 <span>Apr-Jul</span>
               </div>
               <h4 class="job-title ms-3 mb-0">Back-End Developer</h4>
@@ -710,7 +918,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -722,41 +930,44 @@
       <h4 class="text-uppercase fw-bold text-primary mb-2">Portfolio</h4>
       <h2 class="display-5 fw-bold mb-4">My Featured Projects</h2>
       <div class="title-underline mx-auto"></div>
-      <p class="lead col-md-8 mx-auto">Explore my latest projects showcasing my skills in web development, design, and problem-solving.</p>
+      <p class="lead col-md-8 mx-auto">
+        Explore my latest projects showcasing my skills in web development,
+        design, and problem-solving.
+      </p>
     </div>
-    
+
     <!-- Filter Buttons -->
     <div class="filter-button-group text-center mb-5" data-aos="fade-up">
-      <button 
-        class="filter-btn" 
+      <button
+        class="filter-btn"
         [class.active]="currentProjectCategory === 'all'"
         (click)="filterProjects('all')"
       >
         All Projects
       </button>
-      <button 
-        class="filter-btn" 
+      <button
+        class="filter-btn"
         [class.active]="currentProjectCategory === 'frontend'"
         (click)="filterProjects('frontend')"
       >
         Frontend
       </button>
-      <button 
-        class="filter-btn" 
+      <button
+        class="filter-btn"
         [class.active]="currentProjectCategory === 'backend'"
         (click)="filterProjects('backend')"
       >
         Backend
       </button>
-      <button 
-        class="filter-btn" 
+      <button
+        class="filter-btn"
         [class.active]="currentProjectCategory === 'fullstack'"
         (click)="filterProjects('fullstack')"
       >
         Full Stack
       </button>
     </div>
-    
+
     <div class="row g-4">
       <!-- Project 1 -->
       <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
@@ -768,9 +979,9 @@
               class="img-fluid"
             />
             <div class="project-overlay">
-              <a 
-                href="/assets/images/drugstore.png" 
-                data-lightbox="projects" 
+              <a
+                href="/assets/images/drugstore.png"
+                data-lightbox="projects"
                 data-title="Drugstore Application"
                 class="project-view"
               >
@@ -786,7 +997,8 @@
               <span class="project-tag">MySQL</span>
             </div>
             <p class="project-description mb-3">
-              A comprehensive e-commerce application for a pharmacy store with inventory management, order processing, and user authentication.
+              A comprehensive e-commerce application for a pharmacy store with
+              inventory management, order processing, and user authentication.
             </p>
             <div class="project-links">
               <a
@@ -807,9 +1019,13 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Project 2 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="project-card h-100">
           <div class="project-image">
             <img
@@ -818,9 +1034,9 @@
               class="img-fluid"
             />
             <div class="project-overlay">
-              <a 
-                href="/assets/images/weather.png" 
-                data-lightbox="projects" 
+              <a
+                href="/assets/images/weather.png"
+                data-lightbox="projects"
                 data-title="Weather Application"
                 class="project-view"
               >
@@ -836,7 +1052,8 @@
               <span class="project-tag">CSS3</span>
             </div>
             <p class="project-description mb-3">
-              Real-time weather application with forecasts, location-based searches, and interactive UI for displaying weather conditions.
+              Real-time weather application with forecasts, location-based
+              searches, and interactive UI for displaying weather conditions.
             </p>
             <div class="project-links">
               <a
@@ -857,9 +1074,13 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Project 3 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div class="project-card h-100">
           <div class="project-image">
             <img
@@ -868,9 +1089,9 @@
               class="img-fluid"
             />
             <div class="project-overlay">
-              <a 
-                href="/assets/images/Laptop.png" 
-                data-lightbox="projects" 
+              <a
+                href="/assets/images/Laptop.png"
+                data-lightbox="projects"
                 data-title="Laptop Store"
                 class="project-view"
               >
@@ -886,7 +1107,8 @@
               <span class="project-tag">MongoDB</span>
             </div>
             <p class="project-description mb-3">
-              Feature-rich e-commerce platform for laptops with advanced filtering, search, user reviews, and secure payment processing.
+              Feature-rich e-commerce platform for laptops with advanced
+              filtering, search, user reviews, and secure payment processing.
             </p>
             <div class="project-links">
               <a
@@ -907,7 +1129,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Project 4 -->
       <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
         <div class="project-card h-100">
@@ -918,9 +1140,9 @@
               class="img-fluid"
             />
             <div class="project-overlay">
-              <a 
-                href="/assets/images/vera.png" 
-                data-lightbox="projects" 
+              <a
+                href="/assets/images/vera.png"
+                data-lightbox="projects"
                 data-title="Vera E-commerce"
                 class="project-view"
               >
@@ -936,7 +1158,8 @@
               <span class="project-tag">PostgreSQL</span>
             </div>
             <p class="project-description mb-3">
-              Enterprise resource planning system with inventory management, customer relationship management, and sales analytics.
+              Enterprise resource planning system with inventory management,
+              customer relationship management, and sales analytics.
             </p>
             <div class="project-links">
               <a
@@ -957,9 +1180,13 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Project 5 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="project-card h-100">
           <div class="project-image">
             <img
@@ -968,9 +1195,9 @@
               class="img-fluid"
             />
             <div class="project-overlay">
-              <a 
-                href="/assets/img/web_analyzer.png" 
-                data-lightbox="projects" 
+              <a
+                href="/assets/img/web_analyzer.png"
+                data-lightbox="projects"
                 data-title="AI Cybersecurity System"
                 class="project-view"
               >
@@ -986,7 +1213,8 @@
               <span class="project-tag">Django</span>
             </div>
             <p class="project-description mb-3">
-              Advanced cybersecurity system using machine learning to detect and prevent threats, vulnerabilities, and unusual patterns.
+              Advanced cybersecurity system using machine learning to detect and
+              prevent threats, vulnerabilities, and unusual patterns.
             </p>
             <div class="project-links">
               <a
@@ -1007,9 +1235,13 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Project 6 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div class="project-card h-100">
           <div class="project-image">
             <img
@@ -1018,9 +1250,9 @@
               class="img-fluid"
             />
             <div class="project-overlay">
-              <a 
-                href="/assets/img/expense.png" 
-                data-lightbox="projects" 
+              <a
+                href="/assets/img/expense.png"
+                data-lightbox="projects"
                 data-title="Expense Tracker"
                 class="project-view"
               >
@@ -1036,7 +1268,8 @@
               <span class="project-tag">Chart.js</span>
             </div>
             <p class="project-description mb-3">
-              Personal finance application to track expenses, set budgets, and visualize spending habits through interactive charts.
+              Personal finance application to track expenses, set budgets, and
+              visualize spending habits through interactive charts.
             </p>
             <div class="project-links">
               <a
@@ -1069,10 +1302,11 @@
       <h2 class="display-5 fw-bold mb-4 text-white">What I Offer</h2>
       <div class="title-underline mx-auto"></div>
       <p class="lead text-white col-md-8 mx-auto">
-        Specialized web development services tailored to your specific needs. From concept to deployment, I deliver high-quality, scalable solutions.
+        Specialized web development services tailored to your specific needs.
+        From concept to deployment, I deliver high-quality, scalable solutions.
       </p>
     </div>
-    
+
     <div class="row g-4">
       <!-- Service 1 -->
       <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
@@ -1082,102 +1316,176 @@
           </div>
           <h4 class="service-title fw-bold mb-3">Web Development</h4>
           <p class="service-description">
-            Full-stack web development using modern technologies like Angular, React, Spring Boot, and Node.js to create responsive, high-performance web applications.
+            Full-stack web development using modern technologies like Angular,
+            React, Spring Boot, and Node.js to create responsive,
+            high-performance web applications.
           </p>
           <ul class="service-features">
-            <li><i class="fas fa-check text-primary me-2"></i> Responsive Design</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Frontend & Backend Development</li>
-            <li><i class="fas fa-check text-primary me-2"></i> API Integration</li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Responsive Design
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Frontend & Backend
+              Development
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> API Integration
+            </li>
           </ul>
         </div>
       </div>
-      
+
       <!-- Service 2 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-mobile-alt"></i>
           </div>
           <h4 class="service-title fw-bold mb-3">Responsive UI/UX Design</h4>
           <p class="service-description">
-            Creating intuitive, user-friendly interfaces that work seamlessly across all devices. I focus on usability, accessibility, and visual appeal.
+            Creating intuitive, user-friendly interfaces that work seamlessly
+            across all devices. I focus on usability, accessibility, and visual
+            appeal.
           </p>
           <ul class="service-features">
-            <li><i class="fas fa-check text-primary me-2"></i> Mobile-First Design</li>
-            <li><i class="fas fa-check text-primary me-2"></i> User Experience Optimization</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Interactive Prototypes</li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Mobile-First Design
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> User Experience
+              Optimization
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Interactive
+              Prototypes
+            </li>
           </ul>
         </div>
       </div>
-      
+
       <!-- Service 3 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-server"></i>
           </div>
           <h4 class="service-title fw-bold mb-3">DevOps Solutions</h4>
           <p class="service-description">
-            Implementing continuous integration/deployment pipelines, container orchestration, and infrastructure automation for streamlined development workflows.
+            Implementing continuous integration/deployment pipelines, container
+            orchestration, and infrastructure automation for streamlined
+            development workflows.
           </p>
           <ul class="service-features">
-            <li><i class="fas fa-check text-primary me-2"></i> CI/CD Pipeline Setup</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Docker Containerization</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Cloud Deployment</li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> CI/CD Pipeline
+              Setup
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Docker
+              Containerization
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Cloud Deployment
+            </li>
           </ul>
         </div>
       </div>
-      
+
       <!-- Service 4 -->
       <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-database"></i>
           </div>
-          <h4 class="service-title fw-bold mb-3">Database Design & Optimization</h4>
+          <h4 class="service-title fw-bold mb-3">
+            Database Design & Optimization
+          </h4>
           <p class="service-description">
-            Designing efficient database structures, optimizing queries, and ensuring data integrity for SQL and NoSQL databases.
+            Designing efficient database structures, optimizing queries, and
+            ensuring data integrity for SQL and NoSQL databases.
           </p>
           <ul class="service-features">
-            <li><i class="fas fa-check text-primary me-2"></i> Schema Design</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Performance Tuning</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Data Migration</li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Schema Design
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Performance Tuning
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Data Migration
+            </li>
           </ul>
         </div>
       </div>
-      
+
       <!-- Service 5 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-shield-alt"></i>
           </div>
           <h4 class="service-title fw-bold mb-3">Web Security</h4>
           <p class="service-description">
-            Implementing robust security measures to protect applications from common vulnerabilities and ensure data privacy compliance.
+            Implementing robust security measures to protect applications from
+            common vulnerabilities and ensure data privacy compliance.
           </p>
           <ul class="service-features">
-            <li><i class="fas fa-check text-primary me-2"></i> Security Audits</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Authentication Systems</li>
-            <li><i class="fas fa-check text-primary me-2"></i> GDPR Compliance</li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Security Audits
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Authentication
+              Systems
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> GDPR Compliance
+            </li>
           </ul>
         </div>
       </div>
-      
+
       <!-- Service 6 -->
-      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <div
+        class="col-md-6 col-lg-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-code-branch"></i>
           </div>
-          <h4 class="service-title fw-bold mb-3">Code Maintenance & Refactoring</h4>
+          <h4 class="service-title fw-bold mb-3">
+            Code Maintenance & Refactoring
+          </h4>
           <p class="service-description">
-            Improving existing codebases through refactoring, optimization, and implementing best practices for better maintainability.
+            Improving existing codebases through refactoring, optimization, and
+            implementing best practices for better maintainability.
           </p>
           <ul class="service-features">
-            <li><i class="fas fa-check text-primary me-2"></i> Legacy Code Migration</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Performance Optimization</li>
-            <li><i class="fas fa-check text-primary me-2"></i> Technical Debt Reduction</li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Legacy Code
+              Migration
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Performance
+              Optimization
+            </li>
+            <li>
+              <i class="fas fa-check text-primary me-2"></i> Technical Debt
+              Reduction
+            </li>
           </ul>
         </div>
       </div>
@@ -1193,21 +1501,24 @@
       <h2 class="display-5 fw-bold mb-4 text-white">Get In Touch</h2>
       <div class="title-underline mx-auto"></div>
       <p class="lead text-white col-md-8 mx-auto">
-        Have a project in mind or want to discuss potential collaboration? Feel free to reach out through the form below.
+        Have a project in mind or want to discuss potential collaboration? Feel
+        free to reach out through the form below.
       </p>
     </div>
-    
+
     <div class="row">
       <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-up">
         <div class="contact-form-container">
           <div class="contact-form">
             <h4 class="fw-bold mb-4">Send Me a Message</h4>
-            
+
             <form (ngSubmit)="submitContactForm()">
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-group">
-                    <label for="name" class="form-label fw-medium mb-2">Your Name</label>
+                    <label for="name" class="form-label fw-medium mb-2"
+                      >Your Name</label
+                    >
                     <input
                       type="text"
                       class="form-control"
@@ -1221,7 +1532,9 @@
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-group">
-                    <label for="email" class="form-label fw-medium mb-2">Your Email</label>
+                    <label for="email" class="form-label fw-medium mb-2"
+                      >Your Email</label
+                    >
                     <input
                       type="email"
                       class="form-control"
@@ -1234,9 +1547,11 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="form-group mb-4">
-                <label for="message" class="form-label fw-medium mb-2">Your Message</label>
+                <label for="message" class="form-label fw-medium mb-2"
+                  >Your Message</label
+                >
                 <textarea
                   class="form-control"
                   id="message"
@@ -1247,21 +1562,23 @@
                   required
                 ></textarea>
               </div>
-              
+
               <!-- Error message -->
               <div *ngIf="formSubmitError" class="alert alert-danger mb-4">
-                <i class="fas fa-exclamation-circle me-2"></i> {{ errorMessage }}
+                <i class="fas fa-exclamation-circle me-2"></i>
+                {{ errorMessage }}
               </div>
-              
+
               <!-- Success message -->
               <div *ngIf="formSubmitSuccess" class="alert alert-success mb-4">
-                <i class="fas fa-check-circle me-2"></i> Your message has been sent successfully. I'll get back to you soon!
+                <i class="fas fa-check-circle me-2"></i> Your message has been
+                sent successfully. I'll get back to you soon!
               </div>
-              
+
               <div class="form-group">
-                <button 
-                  type="submit" 
-                  class="btn btn-primary w-100 py-3" 
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100 py-3"
                   [disabled]="isFormSubmitting"
                 >
                   <span *ngIf="!isFormSubmitting">Send Message</span>
@@ -1274,11 +1591,11 @@
           </div>
         </div>
       </div>
-      
+
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="contact-info h-100">
           <h4 class="fw-bold mb-4">Contact Information</h4>
-          
+
           <!-- Location -->
           <div class="contact-info-item">
             <div class="contact-info-icon">
@@ -1289,7 +1606,7 @@
               <p>Nabeul, Tunisia</p>
             </div>
           </div>
-          
+
           <!-- Email -->
           <div class="contact-info-item">
             <div class="contact-info-icon">
@@ -1298,32 +1615,43 @@
             <div>
               <h6 class="fw-bold mb-1">Email</h6>
               <p>
-                <a href="mailto:ibrahimelothmanii&#64;gmail.com" class="text-white text-decoration-none">
+                <a
+                  href="mailto:ibrahimelothmanii&#64;gmail.com"
+                  class="text-white text-decoration-none"
+                >
                   ibrahimelothmanii&#64;gmail.com
                 </a>
               </p>
             </div>
           </div>
-          
+
           <!-- Social Links -->
           <h6 class="fw-bold mb-3 mt-4">Find me on</h6>
           <div class="contact-social">
-            <a href="https://www.linkedin.com/in/ibrahim-el-othmani-elothmani/" target="_blank" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/ibrahim-el-othmani-elothmani/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/ibrahimelothmani" target="_blank" aria-label="GitHub">
+            <a
+              href="https://github.com/ibrahimelothmani"
+              target="_blank"
+              aria-label="GitHub"
+            >
               <i class="fab fa-github"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Back to top button -->
     <div class="back-to-top" [class.show]="true" (click)="scrollToTop()">
       <i class="fas fa-arrow-up"></i>
     </div>
-    
+
     <!-- Footer -->
     <div class="footer text-center text-white mt-5 pt-5">
       <div class="container">
