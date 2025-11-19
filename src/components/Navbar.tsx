@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-slate-900/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-6'
+            className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-6'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -45,24 +46,25 @@ const Navbar = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-gray-300 hover:text-primary-400 transition-colors text-sm font-medium uppercase tracking-wider"
+                                className="text-slate-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors text-sm font-medium uppercase tracking-wider"
                             >
                                 {link.name}
                             </a>
                         ))}
-                        <div className="flex items-center gap-4 ml-4 border-l border-gray-700 pl-4">
-                            <a href="https://github.com/ibrahimelothmani" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                        <div className="flex items-center gap-4 ml-4 border-l border-gray-300 dark:border-gray-700 pl-4">
+                            <ThemeToggle />
+                            <a href="https://github.com/ibrahimelothmani" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white transition-colors">
                                 <Github size={20} />
                             </a>
-                            <a href="https://www.linkedin.com/in/ibrahimelothmani/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                            <a href="https://www.linkedin.com/in/ibrahimelothmani/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white transition-colors">
                                 <Linkedin size={20} />
                             </a>
                         </div>
                     </div>
 
-                    {/* Mobile Menu Button - Always visible */}
+                    {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden text-white"
+                        className="md:hidden text-slate-700 dark:text-white"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -77,7 +79,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-slate-900 border-b border-gray-800 overflow-hidden"
+                        className="md:hidden bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-gray-800 overflow-hidden"
                     >
                         <div className="px-6 py-8 flex flex-col gap-6">
                             {navLinks.map((link) => (
@@ -85,20 +87,18 @@ const Navbar = () => {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="text-gray-300 hover:text-primary-400 text-lg font-medium"
+                                    className="text-slate-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 text-lg font-medium"
                                 >
                                     {link.name}
                                 </a>
                             ))}
-                            <div className="flex gap-6 mt-4">
-                                <a href="https://github.com/ibrahimelothmani" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                            <div className="flex gap-6 mt-4 items-center">
+                                <ThemeToggle />
+                                <a href="https://github.com/ibrahimelothmani" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white">
                                     <Github size={24} />
                                 </a>
-                                <a href="https://www.linkedin.com/in/ibrahimelothmani/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                                <a href="https://www.linkedin.com/in/ibrahimelothmani/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white">
                                     <Linkedin size={24} />
-                                </a>
-                                <a href="mailto:ibrahimelothmanii@gmail.com" className="text-gray-400 hover:text-white">
-                                    <Mail size={24} />
                                 </a>
                             </div>
                         </div>

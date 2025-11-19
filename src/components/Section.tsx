@@ -27,7 +27,7 @@ const Section: React.FC<SectionProps> = ({ id, title, subtitle, className = '', 
                             </span>
                         )}
                         {title && (
-                            <h2 className="text-3xl md:text-4xl font-bold text-white relative inline-block">
+                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white relative inline-block">
                                 {title}
                                 <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-primary-500 rounded-full"></span>
                             </h2>

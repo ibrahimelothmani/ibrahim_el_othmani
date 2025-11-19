@@ -25,14 +25,14 @@ const Hero = () => {
                         transition={{ duration: 0.5 }}
                         className="w-full"
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-primary-500/10 border border-primary-500/30 text-primary-400 text-sm font-medium mb-6">
+                        <span className="inline-block py-1 px-3 rounded-full bg-primary-500/10 dark:bg-primary-500/10 border border-primary-500/30 dark:border-primary-500/30 text-primary-600 dark:text-primary-400 text-sm font-medium mb-6">
                             Available for Hire
                         </span>
-                        <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-tight">
+                        <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-tight text-slate-900 dark:text-white">
                             Building the <br />
                             <span className="gradient-text">Future of Cloud</span>
                         </h1>
-                        <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                        <p className="text-xl text-slate-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
                             I am a Cloud & DevOps Engineer and Full Stack Developer. I build scalable infrastructure and high-performance web applications.
                         </p>
 
@@ -46,7 +46,7 @@ const Hero = () => {
                             <a
                                 href="/resume.pdf"
                                 download="Ibrahim_El_Othmani_Resume.pdf"
-                                className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-full font-medium transition-all flex items-center gap-2 backdrop-blur-sm"
+                                className="px-8 py-4 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 border border-slate-300 dark:border-white/10 text-slate-900 dark:text-white rounded-full font-medium transition-all flex items-center gap-2 backdrop-blur-sm"
                             >
                                 Download CV <Download size={20} />
                             </a>
@@ -61,7 +61,7 @@ const Hero = () => {
                         className="mt-12 flex flex-wrap justify-center gap-4"
                     >
                         {['AWS', 'Kubernetes', 'Terraform', 'React', 'Spring Boot'].map((tech) => (
-                            <div key={tech} className="px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700 text-slate-300 text-sm hover:border-primary-500/50 transition-colors">
+                            <div key={tech} className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-sm hover:border-primary-500/50 transition-colors">
                                 {tech}
                             </div>
                         ))}

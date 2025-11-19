@@ -61,11 +61,11 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                        <p className="text-slate-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
                             I am a motivated <span className="text-primary-400 font-semibold">Cloud & DevOps Engineer</span> with a strong background in full-stack development.
                             I specialize in designing scalable cloud solutions on AWS and Azure, automating deployment pipelines, and orchestrating containerized applications with Kubernetes.
                         </p>
-                        <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                        <p className="text-slate-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
                             With a proven track record of reducing deployment times and improving system reliability, I leverage Infrastructure as Code (Terraform, Ansible) and modern CI/CD practices to drive digital transformation.
                         </p>
 
