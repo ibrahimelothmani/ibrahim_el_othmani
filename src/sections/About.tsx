@@ -33,36 +33,57 @@ const skills = [
 const About = () => {
     return (
         <Section id="about" title="About Me" subtitle="Get to know me">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Text Content */}
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                        I am a motivated <span className="text-primary-400 font-semibold">Cloud & DevOps Engineer</span> with a strong background in full-stack development.
-                        I specialize in designing scalable cloud solutions on AWS and Azure, automating deployment pipelines, and orchestrating containerized applications with Kubernetes.
-                    </p>
-                    <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                        With a proven track record of reducing deployment times and improving system reliability, I leverage Infrastructure as Code (Terraform, Ansible) and modern CI/CD practices to drive digital transformation.
-                    </p>
-
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                            <h4 className="text-3xl font-bold text-primary-500 mb-1">2+</h4>
-                            <p className="text-sm text-gray-400">Years Experience</p>
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+                {/* Left Side - Photo & Text Content */}
+                <div>
+                    {/* Profile Photo */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className="mb-8"
+                    >
+                        <div className="relative w-64 h-64 mx-auto lg:mx-0">
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-blue-600 rounded-2xl opacity-20 blur-xl animate-pulse" />
+                            <img
+                                src="/assets/images/ibrahim.png"
+                                alt="Ibrahim El Othmani"
+                                className="relative w-full h-full object-cover rounded-2xl border-2 border-slate-700 shadow-2xl"
+                            />
                         </div>
-                        <div className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                            <h4 className="text-3xl font-bold text-primary-500 mb-1">10+</h4>
-                            <p className="text-sm text-gray-400">Projects Completed</p>
-                        </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
 
-                {/* Skills Grid */}
-                <div className="grid gap-6">
+                    {/* Text Content */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                            I am a motivated <span className="text-primary-400 font-semibold">Cloud & DevOps Engineer</span> with a strong background in full-stack development.
+                            I specialize in designing scalable cloud solutions on AWS and Azure, automating deployment pipelines, and orchestrating containerized applications with Kubernetes.
+                        </p>
+                        <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                            With a proven track record of reducing deployment times and improving system reliability, I leverage Infrastructure as Code (Terraform, Ansible) and modern CI/CD practices to drive digital transformation.
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
+                                <h4 className="text-3xl font-bold text-primary-500 mb-1">2+</h4>
+                                <p className="text-sm text-gray-400">Years Experience</p>
+                            </div>
+                            <div className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
+                                <h4 className="text-3xl font-bold text-primary-500 mb-1">10+</h4>
+                                <p className="text-sm text-gray-400">Projects Completed</p>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+
+                {/* Right Side - Skills Grid */}
+                <div className="grid gap-4">
                     {skills.map((skillGroup, index) => (
                         <motion.div
                             key={skillGroup.category}
