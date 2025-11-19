@@ -1,73 +1,73 @@
-# Ibrahim El Othmani Portfolio
+# React + TypeScript + Vite
 
-A modern, professional portfolio website built with Angular.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- **Modern Design**: Clean and professional design with smooth animations and transitions
-- **Responsive**: Fully responsive and optimized for all devices
-- **Dark/Light Mode**: Theme toggle with preferences saved in local storage
-- **Interactive UI**: Engaging user experience with AOS animations
-- **Project Showcase**: Filterable portfolio section to highlight projects
-- **Contact Form**: Integrated with Firebase for message storage
-- **Accessibility**: WCAG 2.1 compliant with proper ARIA labels and keyboard navigation
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Technologies Used
+## React Compiler
 
-- **Angular 18.2.0**: Modern front-end framework
-- **Bootstrap 5**: CSS framework for responsive design
-- **Firebase**: Backend services for contact form
-- **AOS**: Animate On Scroll library for scroll animations
-- **Font Awesome**: Icon library
-- **Lightbox**: For image galleries
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Project Structure
+## Expanding the ESLint configuration
 
-- `src/app/home`: Main portfolio component
-- `src/app/header`: Navigation and hero section
-- `src/app/theme-toggler`: Dark/light mode toggle component
-- `src/assets`: Images, PDFs, and other static assets
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Getting Started
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   ```
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-3. Set up environment variables for Firebase in `src/environments/environment.ts`
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-4. Run the development server:
-   ```bash
-   ng serve
-   ```
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-5. Open your browser and navigate to `http://localhost:4200`
-
-## Deployment
-
-The project is set up for easy deployment to Vercel. Simply connect your repository to Vercel and it will automatically deploy on changes to the main branch.
-
-## Customization
-
-To customize this portfolio for your own use:
-
-1. Update the personal information in the components
-2. Replace project images and descriptions
-3. Update the resume PDFs in the assets folder
-4. Customize the color scheme in `src/styles.css`
-
-## License
-
-MIT
-
-## Contact
-
-Ibrahim El Othmani - [ibrahimelothmanii@gmail.com](mailto:ibrahimelothmanii@gmail.com)
-
-Project Link: [https://github.com/ibrahimelothmani/Portfolio](https://github.com/ibrahimelothmani/Portfolio)
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
